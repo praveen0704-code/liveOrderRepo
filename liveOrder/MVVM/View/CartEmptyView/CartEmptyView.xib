@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat Regular 400.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat SemiBold 600.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CartEmptyView" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tG-7Z-gJC">
+                    <rect key="frame" x="0.0" y="622" width="414" height="274"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cartEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="Eb7-a6-z51">
+                            <rect key="frame" x="152" y="27" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="L08-1L-5zB"/>
+                                <constraint firstAttribute="width" constant="100" id="wGe-PR-XmC"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lets add some medicines." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mA1-ed-QN6">
+                            <rect key="frame" x="113" y="166" width="178" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="8Em-J1-DgB"/>
+                                <constraint firstAttribute="width" constant="178" id="qyN-TU-pHP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                            <color key="textColor" systemColor="systemGray2Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unfortunately! it feels so light" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9x-hL-Cbt">
+                            <rect key="frame" x="89.5" y="136" width="225" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="225" id="MQQ-em-VMB"/>
+                                <constraint firstAttribute="height" constant="23" id="oDn-5o-kq8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="1nB-Kg-J2r"/>
+                        <constraint firstItem="t9x-hL-Cbt" firstAttribute="centerX" secondItem="2tG-7Z-gJC" secondAttribute="centerX" constant="-5" id="3wm-Vk-uFU"/>
+                        <constraint firstItem="t9x-hL-Cbt" firstAttribute="top" secondItem="Eb7-a6-z51" secondAttribute="bottom" constant="9" id="bui-9m-zpH"/>
+                        <constraint firstItem="Eb7-a6-z51" firstAttribute="centerX" secondItem="2tG-7Z-gJC" secondAttribute="centerX" constant="-5" id="dPv-pe-Y4I"/>
+                        <constraint firstItem="Eb7-a6-z51" firstAttribute="top" secondItem="2tG-7Z-gJC" secondAttribute="top" constant="27" id="f8x-qn-5dq"/>
+                        <constraint firstItem="mA1-ed-QN6" firstAttribute="centerX" secondItem="2tG-7Z-gJC" secondAttribute="centerX" constant="-5" id="iVf-Nr-9VS"/>
+                        <constraint firstAttribute="height" constant="274" id="nhA-B8-5no"/>
+                        <constraint firstItem="mA1-ed-QN6" firstAttribute="top" secondItem="t9x-hL-Cbt" secondAttribute="bottom" constant="7" id="rsZ-oR-mBX"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.035294117647058823" green="0.14117647058823529" blue="0.28235294117647058" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2tG-7Z-gJC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="HEK-fn-FsX"/>
+                <constraint firstItem="2tG-7Z-gJC" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="34" id="ZyL-aV-DfT"/>
+                <constraint firstItem="2tG-7Z-gJC" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="iUr-iN-rCg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2tG-7Z-gJC" secondAttribute="trailing" id="kza-cR-kIV"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="mainEmptyView" destination="2tG-7Z-gJC" id="yaL-7z-FED"/>
+            </connections>
+            <point key="canvasLocation" x="44.927536231884062" y="4.0178571428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cartEmpty" width="64" height="86"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

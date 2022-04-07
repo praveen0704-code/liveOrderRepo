@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SortOptionViewf"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SortOptionView" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Xh-RR-Esp">
+                    <rect key="frame" x="0.0" y="44" width="414" height="451"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="451" id="zqD-xW-Bff"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0u-iQ-M1q">
+                    <rect key="frame" x="0.0" y="523" width="414" height="373"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7k-Nz-H6S">
+                            <rect key="frame" x="20" y="38" width="55.5" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="XLQ-GZ-KaY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.18431372549019609" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select from below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lp-YZ-7jF">
+                            <rect key="frame" x="20" y="62" width="100" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="0a1-Kc-U5e"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                            <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAv-Li-BCB" customClass="DashedLineView" customModule="liveOrder" customModuleProvider="target">
+                            <rect key="frame" x="20" y="91.5" width="374" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="VeG-sj-2LU"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uD8-7p-36k">
+                            <rect key="frame" x="16" y="112.5" width="382" height="219"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="219" id="fmi-t6-ykh"/>
+                            </constraints>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="uD8-7p-36k" secondAttribute="trailing" constant="16" id="Dfq-gT-i7n"/>
+                        <constraint firstItem="uD8-7p-36k" firstAttribute="leading" secondItem="t0u-iQ-M1q" secondAttribute="leading" constant="16" id="Ie7-Hg-OlT"/>
+                        <constraint firstItem="uD8-7p-36k" firstAttribute="top" secondItem="lAv-Li-BCB" secondAttribute="bottom" constant="20" id="K1I-wK-pKP"/>
+                        <constraint firstItem="s7k-Nz-H6S" firstAttribute="leading" secondItem="t0u-iQ-M1q" secondAttribute="leading" constant="20" symbolic="YES" id="Mt9-93-EBD"/>
+                        <constraint firstItem="lAv-Li-BCB" firstAttribute="leading" secondItem="t0u-iQ-M1q" secondAttribute="leading" constant="20" symbolic="YES" id="PkJ-Pk-dmo"/>
+                        <constraint firstItem="5lp-YZ-7jF" firstAttribute="leading" secondItem="t0u-iQ-M1q" secondAttribute="leading" constant="20" symbolic="YES" id="UbM-js-kSW"/>
+                        <constraint firstItem="s7k-Nz-H6S" firstAttribute="top" secondItem="t0u-iQ-M1q" secondAttribute="top" constant="38" id="UuD-fS-PZ0"/>
+                        <constraint firstItem="lAv-Li-BCB" firstAttribute="top" secondItem="5lp-YZ-7jF" secondAttribute="bottom" constant="12.5" id="YG6-Lc-WxH"/>
+                        <constraint firstAttribute="height" constant="373" id="Ymk-Cg-bmr"/>
+                        <constraint firstItem="5lp-YZ-7jF" firstAttribute="top" secondItem="s7k-Nz-H6S" secondAttribute="bottom" constant="4" id="lo5-up-o9l"/>
+                        <constraint firstAttribute="trailing" secondItem="lAv-Li-BCB" secondAttribute="trailing" constant="20" symbolic="YES" id="y9t-fd-P6E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.035294117647058823" green="0.14117647058823529" blue="0.28235294117647058" alpha="0.54000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="t0u-iQ-M1q" firstAttribute="top" secondItem="1Xh-RR-Esp" secondAttribute="bottom" constant="28" id="5b1-3x-JWs"/>
+                <constraint firstItem="t0u-iQ-M1q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6Ul-R8-bpJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Xh-RR-Esp" secondAttribute="trailing" id="SIW-Ps-Ifh"/>
+                <constraint firstItem="1Xh-RR-Esp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UFh-ry-8Vm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="t0u-iQ-M1q" secondAttribute="trailing" id="cqe-hB-ncc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="1Xh-RR-Esp" secondAttribute="top" id="fTc-f3-jRP"/>
+                <constraint firstItem="t0u-iQ-M1q" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="34" id="hck-7i-q9r"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dashView" destination="lAv-Li-BCB" id="EWY-8S-V8I"/>
+                <outlet property="emtView" destination="1Xh-RR-Esp" id="gf8-nc-Z3i"/>
+                <outlet property="popUpView" destination="t0u-iQ-M1q" id="iHb-a2-qhc"/>
+                <outlet property="selectFromLbl" destination="5lp-YZ-7jF" id="UXp-Qu-fdd"/>
+                <outlet property="sortByLbl" destination="s7k-Nz-H6S" id="EDt-Cv-1n7"/>
+                <outlet property="sortTableView" destination="uD8-7p-36k" id="YvF-jV-0uS"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="4.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

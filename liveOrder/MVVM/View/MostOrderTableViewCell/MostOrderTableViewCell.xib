@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="386" id="KGk-i7-Jjw" customClass="MostOrderTableViewCell" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="386"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="386"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbp-QH-5hM">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="386"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAh-nG-GFz">
+                                <rect key="frame" x="0.0" y="-1.5" width="325" height="375"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top/Most Ordered Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twM-U3-b0t">
+                                        <rect key="frame" x="16" y="16" width="189" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="RyA-tw-BHA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="14"/>
+                                        <color key="textColor" red="0.1803921568627451" green="0.24313725490196078" blue="0.41568627450980389" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Bangalore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhE-aT-0DF">
+                                        <rect key="frame" x="16" y="41" width="71" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="SoM-JF-nyX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBi-Rc-smB">
+                                        <rect key="frame" x="242" y="16" width="67" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="67" id="7Pu-ZS-tGX"/>
+                                            <constraint firstAttribute="height" constant="24" id="YQg-KU-5op"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                        <state key="normal" title="View All">
+                                            <color key="titleColor" red="0.40392156862745099" green="0.29803921568627451" blue="0.95294117647058818" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.1803921568627451" green="0.24313725490196078" blue="0.41568627450980389" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="viewAllBtnAct:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hO1-Qz-A04"/>
+                                        </connections>
+                                    </button>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="G05-Zf-ocx">
+                                        <rect key="frame" x="16" y="70.5" width="309" height="285"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="285" id="gKr-Ay-i30"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5Ze-XC-5UA">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="G05-Zf-ocx" firstAttribute="leading" secondItem="tAh-nG-GFz" secondAttribute="leading" constant="16" id="1nz-hQ-05V"/>
+                                    <constraint firstItem="DBi-Rc-smB" firstAttribute="top" secondItem="tAh-nG-GFz" secondAttribute="top" constant="16" id="A40-be-7fp"/>
+                                    <constraint firstItem="twM-U3-b0t" firstAttribute="leading" secondItem="tAh-nG-GFz" secondAttribute="leading" constant="16" id="GSL-Ct-ion"/>
+                                    <constraint firstItem="YhE-aT-0DF" firstAttribute="top" secondItem="twM-U3-b0t" secondAttribute="bottom" constant="4" id="NDQ-ON-ARM"/>
+                                    <constraint firstAttribute="trailing" secondItem="DBi-Rc-smB" secondAttribute="trailing" constant="16" id="TDO-5H-bBv"/>
+                                    <constraint firstItem="G05-Zf-ocx" firstAttribute="top" secondItem="YhE-aT-0DF" secondAttribute="bottom" constant="14.5" id="jhF-DT-DRW"/>
+                                    <constraint firstAttribute="height" constant="375" id="qwq-Tj-nwP"/>
+                                    <constraint firstItem="twM-U3-b0t" firstAttribute="top" secondItem="tAh-nG-GFz" secondAttribute="top" constant="16" id="v3g-6n-BzP"/>
+                                    <constraint firstAttribute="trailing" secondItem="G05-Zf-ocx" secondAttribute="trailing" id="vFc-KW-egF"/>
+                                    <constraint firstItem="YhE-aT-0DF" firstAttribute="leading" secondItem="tAh-nG-GFz" secondAttribute="leading" constant="16" id="wTR-UE-MZF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tAh-nG-GFz" secondAttribute="trailing" id="0oO-uk-7O8"/>
+                            <constraint firstAttribute="height" constant="386" id="1Zb-d7-EGc"/>
+                            <constraint firstItem="tAh-nG-GFz" firstAttribute="top" secondItem="qbp-QH-5hM" secondAttribute="top" constant="-1.5" id="1hv-Vq-jEi"/>
+                            <constraint firstItem="tAh-nG-GFz" firstAttribute="leading" secondItem="qbp-QH-5hM" secondAttribute="leading" id="gRp-JS-Ex2"/>
+                            <constraint firstAttribute="width" constant="325" id="stB-ZC-Xhr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qbp-QH-5hM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="96f-OU-bFK"/>
+                    <constraint firstAttribute="bottom" secondItem="qbp-QH-5hM" secondAttribute="bottom" id="cyr-ow-cdy"/>
+                    <constraint firstItem="qbp-QH-5hM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lt0-yy-gDp"/>
+                    <constraint firstAttribute="trailing" secondItem="qbp-QH-5hM" secondAttribute="trailing" id="t4f-97-Ao8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cityLbl" destination="YhE-aT-0DF" id="o1i-Bd-rhE"/>
+                <outlet property="mostOverView" destination="tAh-nG-GFz" id="b9g-jg-Wgr"/>
+                <outlet property="topOrderCollView" destination="G05-Zf-ocx" id="LRl-bb-PFz"/>
+                <outlet property="topOrderbl" destination="twM-U3-b0t" id="5Ta-1b-gxD"/>
+                <outlet property="viewAllBtn" destination="DBi-Rc-smB" id="VCI-9E-Vkl"/>
+            </connections>
+            <point key="canvasLocation" x="67.391304347826093" y="66.294642857142861"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

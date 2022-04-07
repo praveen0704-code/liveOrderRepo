@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="220" id="KGk-i7-Jjw" customClass="ProfileTableViewCell" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUH-Mc-nnt">
+                        <rect key="frame" x="0.0" y="0.0" width="377" height="220"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="z0Y-rJ-PRM">
+                                <rect key="frame" x="16" y="14.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Cp5-PK-CXh"/>
+                                    <constraint firstAttribute="width" constant="15" id="vT5-2p-MUp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ff7-hQ-kX7">
+                                <rect key="frame" x="41" y="13" width="282" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="eIY-N8-diQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="14"/>
+                                <color key="textColor" red="0.1803921568627451" green="0.24313725490196078" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="HR0-k0-Rmr">
+                                <rect key="frame" x="343" y="14.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="PYe-l6-hsG"/>
+                                    <constraint firstAttribute="height" constant="15" id="X7p-Ki-Pak"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7ut-G4-QEc">
+                                <rect key="frame" x="41" y="47" width="328" height="151"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="ZVk-J3-6SX"/>
+                                </constraints>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh9-w0-22a">
+                                <rect key="frame" x="16" y="206" width="345" height="1"/>
+                                <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Jea-AB-dHI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7ut-G4-QEc" secondAttribute="trailing" constant="8" id="1Dp-Wa-mpb"/>
+                            <constraint firstAttribute="trailing" secondItem="HR0-k0-Rmr" secondAttribute="trailing" constant="19" id="4yG-UF-Xfl"/>
+                            <constraint firstItem="HR0-k0-Rmr" firstAttribute="top" secondItem="qUH-Mc-nnt" secondAttribute="top" constant="14.5" id="CRv-zb-dX3"/>
+                            <constraint firstItem="yh9-w0-22a" firstAttribute="top" secondItem="7ut-G4-QEc" secondAttribute="bottom" constant="8" symbolic="YES" id="DgA-ZC-roF"/>
+                            <constraint firstItem="z0Y-rJ-PRM" firstAttribute="leading" secondItem="qUH-Mc-nnt" secondAttribute="leading" constant="16" id="MER-TK-leO"/>
+                            <constraint firstItem="yh9-w0-22a" firstAttribute="leading" secondItem="qUH-Mc-nnt" secondAttribute="leading" constant="16" id="MJv-nO-CAi"/>
+                            <constraint firstItem="z0Y-rJ-PRM" firstAttribute="top" secondItem="qUH-Mc-nnt" secondAttribute="top" constant="14.5" id="QNm-3K-o6M"/>
+                            <constraint firstItem="7ut-G4-QEc" firstAttribute="top" secondItem="ff7-hQ-kX7" secondAttribute="bottom" constant="16" id="TKV-SB-yk1"/>
+                            <constraint firstAttribute="trailing" secondItem="yh9-w0-22a" secondAttribute="trailing" constant="16" id="YZ2-a4-wph"/>
+                            <constraint firstItem="ff7-hQ-kX7" firstAttribute="leading" secondItem="z0Y-rJ-PRM" secondAttribute="trailing" constant="10" id="YyR-6a-Vnb"/>
+                            <constraint firstItem="ff7-hQ-kX7" firstAttribute="top" secondItem="qUH-Mc-nnt" secondAttribute="top" constant="13" id="lro-z9-dnx"/>
+                            <constraint firstItem="HR0-k0-Rmr" firstAttribute="leading" secondItem="ff7-hQ-kX7" secondAttribute="trailing" constant="20" id="oIb-26-ImZ"/>
+                            <constraint firstAttribute="height" constant="220" id="plA-Ce-ANN"/>
+                            <constraint firstItem="7ut-G4-QEc" firstAttribute="leading" secondItem="qUH-Mc-nnt" secondAttribute="leading" constant="41" id="xch-lh-i1f"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="qUH-Mc-nnt" secondAttribute="bottom" id="6sb-SY-orT"/>
+                    <constraint firstItem="qUH-Mc-nnt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="F8U-ec-Fkw"/>
+                    <constraint firstItem="qUH-Mc-nnt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nOj-il-u4N"/>
+                    <constraint firstAttribute="trailing" secondItem="qUH-Mc-nnt" secondAttribute="trailing" id="vMm-i6-g1t"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageViewLeft" destination="z0Y-rJ-PRM" id="3Wr-Px-QA7"/>
+                <outlet property="imageViewRight" destination="HR0-k0-Rmr" id="9jn-Kx-wB3"/>
+                <outlet property="overAllView" destination="qUH-Mc-nnt" id="kNd-XM-zdE"/>
+                <outlet property="profileCellTableView" destination="7ut-G4-QEc" id="9ij-xP-aqB"/>
+                <outlet property="txtLbl" destination="ff7-hQ-kX7" id="cKc-ru-tI1"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="124.55357142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="account" width="9.5" height="9.5"/>
+        <image name="downArrow" width="18" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

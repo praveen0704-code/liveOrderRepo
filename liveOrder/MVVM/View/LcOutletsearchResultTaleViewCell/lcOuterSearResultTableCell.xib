@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="111" id="KGk-i7-Jjw" customClass="lcOuterSearResultTableCell" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAJ-QR-fbq">
+                        <rect key="frame" x="5" y="6" width="313" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calpol 650 MG Tablet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpf-4O-dyR">
+                                <rect key="frame" x="5" y="5" width="138.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="Ins-5M-ZO0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glaxosmithkline Pharmaceuticals Ltd." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df0-Tj-YwB">
+                                <rect key="frame" x="5" y="31" width="209.5" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="7UQ-jK-AY9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pack Size: 15 Tablets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOO-8A-mQo">
+                                <rect key="frame" x="5" y="52" width="114" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="BU7-R3-tFN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 38.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTh-Ef-uRA">
+                                <rect key="frame" x="267" y="5" width="46" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="tJL-yN-i7Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAz-j2-gH8">
+                                <rect key="frame" x="5" y="77" width="34" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="trn-Pc-FLw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.82745098039215681" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LTh-Ef-uRA" firstAttribute="top" secondItem="GAJ-QR-fbq" secondAttribute="top" constant="5" id="00f-E2-fLZ"/>
+                            <constraint firstItem="qOO-8A-mQo" firstAttribute="leading" secondItem="GAJ-QR-fbq" secondAttribute="leading" constant="5" id="Byj-he-upj"/>
+                            <constraint firstItem="DAz-j2-gH8" firstAttribute="top" secondItem="qOO-8A-mQo" secondAttribute="bottom" constant="8" id="Dg1-iz-SeB"/>
+                            <constraint firstAttribute="height" constant="100" id="HkB-3k-cFv"/>
+                            <constraint firstItem="qOO-8A-mQo" firstAttribute="top" secondItem="df0-Tj-YwB" secondAttribute="bottom" constant="4" id="ZFP-vz-Pw2"/>
+                            <constraint firstItem="df0-Tj-YwB" firstAttribute="top" secondItem="mpf-4O-dyR" secondAttribute="bottom" constant="8" id="fIP-d1-Gdn"/>
+                            <constraint firstItem="df0-Tj-YwB" firstAttribute="leading" secondItem="GAJ-QR-fbq" secondAttribute="leading" constant="5" id="gKF-Qq-lZT"/>
+                            <constraint firstItem="DAz-j2-gH8" firstAttribute="leading" secondItem="GAJ-QR-fbq" secondAttribute="leading" constant="5" id="ltN-HP-bJ3"/>
+                            <constraint firstItem="mpf-4O-dyR" firstAttribute="top" secondItem="GAJ-QR-fbq" secondAttribute="top" constant="5" id="oJN-ku-law"/>
+                            <constraint firstItem="mpf-4O-dyR" firstAttribute="leading" secondItem="GAJ-QR-fbq" secondAttribute="leading" constant="5" id="vPH-iv-Dly"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="GAJ-QR-fbq" secondAttribute="bottom" constant="5" id="7hK-7j-VGK"/>
+                    <constraint firstAttribute="trailing" secondItem="LTh-Ef-uRA" secondAttribute="trailing" constant="5" id="S5u-ml-iVz"/>
+                    <constraint firstItem="GAJ-QR-fbq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Uay-pG-UND"/>
+                    <constraint firstAttribute="trailing" secondItem="GAJ-QR-fbq" secondAttribute="trailing" constant="5" id="i4P-Jb-2te"/>
+                    <constraint firstItem="GAJ-QR-fbq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="sPU-6m-Xuq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="brandLbl" destination="DAz-j2-gH8" id="rnM-88-0Wg"/>
+                <outlet property="companyName" destination="df0-Tj-YwB" id="TzD-Tp-KY5"/>
+                <outlet property="mrpLbl" destination="LTh-Ef-uRA" id="wl9-QX-eVy"/>
+                <outlet property="overAllView" destination="GAJ-QR-fbq" id="FgO-XR-QdQ"/>
+                <outlet property="packSizeLbl" destination="qOO-8A-mQo" id="Tua-De-yHt"/>
+                <outlet property="productName" destination="mpf-4O-dyR" id="TBF-jT-sPo"/>
+            </connections>
+            <point key="canvasLocation" x="50.000000000000007" y="70.647321428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

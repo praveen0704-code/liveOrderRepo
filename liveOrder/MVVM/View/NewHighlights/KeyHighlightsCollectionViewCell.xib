@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="KeyHighlightsCollectionViewCell" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="291" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="291" height="129"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mc-t7-Cew">
+                        <rect key="frame" x="5" y="49" width="281" height="72"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="men" translatesAutoresizingMaskIntoConstraints="NO" id="qL0-dN-HKV">
+                                <rect key="frame" x="8" y="18" width="44" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="dCQ-7R-n74"/>
+                                    <constraint firstAttribute="width" constant="44" id="ufD-3x-eEa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBg-2b-faY">
+                                <rect key="frame" x="64" y="18" width="209" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="209" id="If1-bt-aX6"/>
+                                    <constraint firstAttribute="height" constant="37" id="QTN-2D-wv9"/>
+                                </constraints>
+                                <string key="text">10K + Trusted
+Customers</string>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" red="0.050980392156862744" green="0.074509803921568626" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="72" id="4Fg-fZ-hJy"/>
+                            <constraint firstAttribute="bottom" secondItem="qL0-dN-HKV" secondAttribute="bottom" constant="17" id="J2A-ZA-ske"/>
+                            <constraint firstItem="dBg-2b-faY" firstAttribute="leading" secondItem="qL0-dN-HKV" secondAttribute="trailing" constant="12" id="J4c-gU-Xnk"/>
+                            <constraint firstAttribute="width" constant="281" id="Qbb-Px-5Lr"/>
+                            <constraint firstItem="qL0-dN-HKV" firstAttribute="leading" secondItem="0mc-t7-Cew" secondAttribute="leading" constant="8" id="Zzi-HZ-5k7"/>
+                            <constraint firstItem="dBg-2b-faY" firstAttribute="top" secondItem="0mc-t7-Cew" secondAttribute="top" constant="18" id="f68-ST-8AY"/>
+                            <constraint firstAttribute="bottom" secondItem="dBg-2b-faY" secondAttribute="bottom" constant="17" id="jdx-X7-tZJ"/>
+                            <constraint firstItem="qL0-dN-HKV" firstAttribute="top" secondItem="0mc-t7-Cew" secondAttribute="top" constant="18" id="qPA-d4-Txx"/>
+                            <constraint firstAttribute="trailing" secondItem="dBg-2b-faY" secondAttribute="trailing" constant="8" id="qUL-Yh-JaR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="0mc-t7-Cew" secondAttribute="trailing" constant="5" id="3n5-ym-eh0"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="0mc-t7-Cew" secondAttribute="top" constant="-5" id="OrY-9P-Z62"/>
+                <constraint firstItem="0mc-t7-Cew" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="5" id="bug-pz-K4d"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="0mc-t7-Cew" secondAttribute="bottom" constant="8" id="lD1-A2-JAY"/>
+            </constraints>
+            <size key="customSize" width="291" height="129"/>
+            <connections>
+                <outlet property="kHImageView" destination="qL0-dN-HKV" id="SKX-ok-dIs"/>
+                <outlet property="kHLAbel" destination="dBg-2b-faY" id="STE-CM-O6r"/>
+            </connections>
+            <point key="canvasLocation" x="310.86956521739131" y="106.80803571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="men" width="66" height="55"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MostOrderedProductCollCell" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="296"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="296"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDd-6d-5gb">
+                        <rect key="frame" x="0.0" y="44" width="159" height="252"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shortbook" translatesAutoresizingMaskIntoConstraints="NO" id="AUS-HO-5Qj">
+                                <rect key="frame" x="127" y="12" width="19" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="f5k-XO-4Ne"/>
+                                    <constraint firstAttribute="height" constant="24" id="gnL-ad-R1e"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="injectable" translatesAutoresizingMaskIntoConstraints="NO" id="kqL-RN-3mB">
+                                <rect key="frame" x="55" y="32" width="49" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="4lH-dE-QgI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bronko Med Syrup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sp-gn-tsr">
+                                <rect key="frame" x="12" y="128" width="104" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="USE-Lj-rZh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" red="0.050980392156862744" green="0.074509803921568626" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pack Size: 100ml syrup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJI-EK-WRo">
+                                <rect key="frame" x="12" y="147" width="113.5" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="ad2-ds-b1K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.5725490196078431" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MRP   28.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uj-Se-2WB">
+                                <rect key="frame" x="12" y="166" width="60.5" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="3fR-4u-FrV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.18431372549019609" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GST: 12%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tk-0r-pWa">
+                                <rect key="frame" x="86" y="166" width="45" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="Ngy-12-z2b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.18431372549019609" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contains" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyW-5D-RG9">
+                                <rect key="frame" x="12" y="183" width="44.5" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="XvW-NC-4Ur"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.5725490196078431" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paracetamol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grg-rY-6kD">
+                                <rect key="frame" x="70.5" y="184" width="66.5" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="sKx-ob-An3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.18431372549019609" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWr-Mb-O7z">
+                                <rect key="frame" x="12" y="208.5" width="97" height="26"/>
+                                <color key="backgroundColor" red="0.0" green="0.82745098039215681" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="By1-DF-wGE"/>
+                                    <constraint firstAttribute="width" constant="97" id="dyp-Y0-5Xe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
+                                <state key="normal" title="Add To Cart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kWr-Mb-O7z" firstAttribute="top" secondItem="LyW-5D-RG9" secondAttribute="bottom" constant="12.5" id="1rE-Sz-2tF"/>
+                            <constraint firstItem="xJI-EK-WRo" firstAttribute="top" secondItem="3Sp-gn-tsr" secondAttribute="bottom" constant="4" id="DwC-n0-NH7"/>
+                            <constraint firstItem="kqL-RN-3mB" firstAttribute="top" secondItem="BDd-6d-5gb" secondAttribute="top" constant="32" id="J1A-AP-H3b"/>
+                            <constraint firstItem="3Sp-gn-tsr" firstAttribute="leading" secondItem="BDd-6d-5gb" secondAttribute="leading" constant="12" id="Nzl-C7-PJA"/>
+                            <constraint firstItem="grg-rY-6kD" firstAttribute="top" secondItem="2Tk-0r-pWa" secondAttribute="bottom" constant="4" id="VvY-eF-GBQ"/>
+                            <constraint firstItem="kWr-Mb-O7z" firstAttribute="leading" secondItem="BDd-6d-5gb" secondAttribute="leading" constant="12" id="W9o-qR-reU"/>
+                            <constraint firstItem="kqL-RN-3mB" firstAttribute="leading" secondItem="BDd-6d-5gb" secondAttribute="leading" constant="55" id="X6R-dV-M90"/>
+                            <constraint firstItem="LyW-5D-RG9" firstAttribute="leading" secondItem="BDd-6d-5gb" secondAttribute="leading" constant="12" id="e3h-rh-nkU"/>
+                            <constraint firstAttribute="trailing" secondItem="grg-rY-6kD" secondAttribute="trailing" constant="22" id="fQD-kT-peG"/>
+                            <constraint firstItem="AUS-HO-5Qj" firstAttribute="top" secondItem="BDd-6d-5gb" secondAttribute="top" constant="12" id="fti-kp-HOc"/>
+                            <constraint firstItem="4uj-Se-2WB" firstAttribute="leading" secondItem="BDd-6d-5gb" secondAttribute="leading" constant="12" id="g91-vA-ELR"/>
+                            <constraint firstItem="4uj-Se-2WB" firstAttribute="top" secondItem="xJI-EK-WRo" secondAttribute="bottom" constant="6" id="ge9-Fh-l2W"/>
+                            <constraint firstAttribute="trailing" secondItem="kqL-RN-3mB" secondAttribute="trailing" constant="55" id="iY5-v8-P3R"/>
+                            <constraint firstAttribute="trailing" secondItem="2Tk-0r-pWa" secondAttribute="trailing" constant="28" id="l9U-ET-NJS"/>
+                            <constraint firstItem="3Sp-gn-tsr" firstAttribute="top" secondItem="kqL-RN-3mB" secondAttribute="bottom" constant="9" id="mBu-fg-2G2"/>
+                            <constraint firstAttribute="trailing" secondItem="AUS-HO-5Qj" secondAttribute="trailing" constant="12.800000000000001" id="ogR-0n-yLQ"/>
+                            <constraint firstItem="xJI-EK-WRo" firstAttribute="leading" secondItem="BDd-6d-5gb" secondAttribute="leading" constant="12" id="ohS-F7-jtI"/>
+                            <constraint firstAttribute="height" constant="252" id="uec-Ni-74t"/>
+                            <constraint firstAttribute="bottom" secondItem="kWr-Mb-O7z" secondAttribute="bottom" constant="17.5" id="w02-kC-dq4"/>
+                            <constraint firstItem="2Tk-0r-pWa" firstAttribute="top" secondItem="xJI-EK-WRo" secondAttribute="bottom" constant="6" id="wHx-Lt-hId"/>
+                            <constraint firstItem="LyW-5D-RG9" firstAttribute="top" secondItem="4uj-Se-2WB" secondAttribute="bottom" constant="4" id="xYK-jk-nPR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="BDd-6d-5gb" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="72r-EY-FN0"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="BDd-6d-5gb" secondAttribute="trailing" id="H1S-iP-WdN"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="BDd-6d-5gb" secondAttribute="bottom" id="WyT-si-hnO"/>
+                <constraint firstItem="BDd-6d-5gb" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="qgs-3v-Ayb"/>
+            </constraints>
+            <size key="customSize" width="159" height="296"/>
+            <connections>
+                <outlet property="PakageSize" destination="xJI-EK-WRo" id="oyG-8b-vE5"/>
+                <outlet property="addtoCardBtn" destination="kWr-Mb-O7z" id="4IX-U8-RYm"/>
+                <outlet property="containsLbl" destination="LyW-5D-RG9" id="AGi-x5-BsP"/>
+                <outlet property="containsName" destination="grg-rY-6kD" id="qjW-2k-pUX"/>
+                <outlet property="gstLbl" destination="2Tk-0r-pWa" id="lFu-da-Vdg"/>
+                <outlet property="mrpLbl" destination="4uj-Se-2WB" id="VFb-ul-5tN"/>
+                <outlet property="overallView" destination="BDd-6d-5gb" id="onB-Co-7aR"/>
+                <outlet property="productImgView" destination="kqL-RN-3mB" id="3zP-jX-WrL"/>
+                <outlet property="productName" destination="3Sp-gn-tsr" id="axv-MH-ZJu"/>
+                <outlet property="shortBookImg" destination="AUS-HO-5Qj" id="VfH-ih-mFV"/>
+            </connections>
+            <point key="canvasLocation" x="63.04347826086957" y="83.035714285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="injectable" width="36.5" height="55"/>
+        <image name="shortbook" width="14.5" height="18"/>
+    </resources>
+</document>

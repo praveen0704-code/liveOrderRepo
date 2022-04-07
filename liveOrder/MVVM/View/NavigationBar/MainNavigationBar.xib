@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MainNavigationBar" id="iN0-l3-epB" userLabel="Content" customClass="MainNavigationBar" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5Y-AV-orh">
+                    <rect key="frame" x="25" y="47" width="44" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.18431372549019609" blue="0.30980392156862746" alpha="0.034978126992984693" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="szK-YB-eG1"/>
+                        <constraint firstAttribute="height" constant="44" id="vEI-ft-60o"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2y-es-yMd">
+                    <rect key="frame" x="343" y="47" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="apU-t0-lJx"/>
+                        <constraint firstAttribute="width" constant="44" id="rif-Bq-iPI"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="search_icon"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All over Bangalore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcA-OD-2SB">
+                    <rect key="frame" x="25" y="131" width="102" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="tgw-aE-yFV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.18431372549019609" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Searched Medicines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srQ-wx-QZ8">
+                    <rect key="frame" x="25" y="96" width="230" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="zGN-Am-CXa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="m5Y-AV-orh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="1nZ-ln-swt"/>
+                <constraint firstItem="l2y-es-yMd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="3" id="BDl-JZ-UE5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="m5Y-AV-orh" secondAttribute="top" constant="-3" id="BJ3-jr-dQb"/>
+                <constraint firstItem="srQ-wx-QZ8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="H5q-Rr-NJZ"/>
+                <constraint firstItem="srQ-wx-QZ8" firstAttribute="top" secondItem="m5Y-AV-orh" secondAttribute="bottom" constant="5" id="HO9-kQ-Hcw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="l2y-es-yMd" secondAttribute="trailing" constant="27" id="Kad-Lq-SbC"/>
+                <constraint firstItem="ZcA-OD-2SB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="LgN-sa-b8A"/>
+                <constraint firstItem="ZcA-OD-2SB" firstAttribute="top" secondItem="srQ-wx-QZ8" secondAttribute="bottom" constant="6" id="dNa-eU-UvN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="navBackButton" destination="m5Y-AV-orh" id="fpn-Z1-GPB"/>
+                <outlet property="navSearchButton" destination="l2y-es-yMd" id="JQy-9q-L9T"/>
+                <outlet property="subTitleLabel" destination="ZcA-OD-2SB" id="HOe-xc-ZaU"/>
+                <outlet property="titleLabel" destination="srQ-wx-QZ8" id="CY5-Ku-o7u"/>
+            </connections>
+            <point key="canvasLocation" x="113.04347826086958" y="-147.32142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="15" height="13"/>
+        <image name="search_icon" width="24.5" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

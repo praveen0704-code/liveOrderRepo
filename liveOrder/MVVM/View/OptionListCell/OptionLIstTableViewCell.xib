@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="59" id="KGk-i7-Jjw" customClass="OptionLIstTableViewCell" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UC3-gf-wAB">
+                        <rect key="frame" x="0.0" y="0.0" width="322" height="59"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugm-WB-vAB">
+                                <rect key="frame" x="26" y="13" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="1oQ-W2-QW1"/>
+                                    <constraint firstAttribute="height" constant="24" id="uHy-SW-7iM"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AbbVie Inc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebB-V6-lfE">
+                                <rect key="frame" x="60" y="7" width="236" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="X5C-NQ-j7b"/>
+                                    <constraint firstAttribute="height" constant="37" id="zy4-O8-aLU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="13"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfW-aG-oAf" customClass="DashedLineView" customModule="liveOrder" customModuleProvider="target">
+                                <rect key="frame" x="26" y="52" width="270" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="jZP-t0-cMX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gfW-aG-oAf" firstAttribute="leading" secondItem="UC3-gf-wAB" secondAttribute="leading" constant="26" id="4Fs-mO-SvG"/>
+                            <constraint firstItem="ebB-V6-lfE" firstAttribute="leading" secondItem="Ugm-WB-vAB" secondAttribute="trailing" constant="10" id="6yc-XY-KZR"/>
+                            <constraint firstItem="Ugm-WB-vAB" firstAttribute="top" secondItem="UC3-gf-wAB" secondAttribute="top" constant="13" id="8fL-75-pOB"/>
+                            <constraint firstItem="Ugm-WB-vAB" firstAttribute="leading" secondItem="UC3-gf-wAB" secondAttribute="leading" constant="26" id="JRh-mL-GKV"/>
+                            <constraint firstAttribute="height" constant="59" id="JbY-TB-y4l"/>
+                            <constraint firstAttribute="trailing" secondItem="gfW-aG-oAf" secondAttribute="trailing" constant="26" id="Qqa-7H-kw2"/>
+                            <constraint firstAttribute="trailing" secondItem="ebB-V6-lfE" secondAttribute="trailing" constant="26" id="X7S-jf-a3K"/>
+                            <constraint firstItem="ebB-V6-lfE" firstAttribute="top" secondItem="UC3-gf-wAB" secondAttribute="top" constant="7" id="eQf-5C-eek"/>
+                            <constraint firstAttribute="bottom" secondItem="gfW-aG-oAf" secondAttribute="bottom" constant="6" id="r6k-dd-0lD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UC3-gf-wAB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Rch-CO-eFK"/>
+                    <constraint firstItem="UC3-gf-wAB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TVN-hf-jlB"/>
+                    <constraint firstAttribute="bottom" secondItem="UC3-gf-wAB" secondAttribute="bottom" id="a3a-kS-My9"/>
+                    <constraint firstAttribute="trailing" secondItem="UC3-gf-wAB" secondAttribute="trailing" id="unz-Yb-MEf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkBoxBtn" destination="Ugm-WB-vAB" id="luQ-Q8-HcM"/>
+                <outlet property="dotLineView" destination="gfW-aG-oAf" id="W6Q-vf-NNI"/>
+                <outlet property="listLbl" destination="ebB-V6-lfE" id="fRD-fL-v6N"/>
+                <outlet property="optionOverView" destination="UC3-gf-wAB" id="rd4-oU-2Es"/>
+            </connections>
+            <point key="canvasLocation" x="65.217391304347828" y="53.90625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

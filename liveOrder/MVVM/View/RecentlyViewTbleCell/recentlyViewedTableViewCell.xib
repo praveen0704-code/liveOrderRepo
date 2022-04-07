@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="125" id="KGk-i7-Jjw" customClass="recentlyViewedTableViewCell" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="312" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBt-UQ-tVc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winopar_250" translatesAutoresizingMaskIntoConstraints="NO" id="Kan-b5-tfM">
+                                <rect key="frame" x="10" y="5" width="50" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="X1l-GJ-kow"/>
+                                    <constraint firstAttribute="width" constant="50" id="aSU-1O-R43"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winopar 250 mg Syp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po2-Vc-uRT">
+                                <rect key="frame" x="91" y="6" width="118" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="bMk-Pm-LTx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" red="0.050980392156862744" green="0.074509803921568626" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mfg:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E34-of-dq4">
+                                <rect key="frame" x="91" y="25" width="22.5" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="G13-rM-o0D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pack Size: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asS-g4-wOr">
+                                <rect key="frame" x="91" y="41" width="53" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="Fki-aQ-zMz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.38823529410000002" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HSN Code: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7o3-GA-46f">
+                                <rect key="frame" x="91" y="57" width="57" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="SjV-9o-eYq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.38823529410000002" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contains " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1h-Re-NC8">
+                                <rect key="frame" x="91" y="93" width="48" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="3qS-Wd-Olj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.38823529410000002" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MRP ₹ 30.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSC-ix-Dim">
+                                <rect key="frame" x="91" y="75" width="63" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="QYX-AA-RYm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.18431372549019609" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30049061" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1s-1q-0IK">
+                                <rect key="frame" x="153" y="57" width="48" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="5eK-Va-3r4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.38823529410000002" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GST- Rate: 12%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f5-70-Nqd">
+                                <rect key="frame" x="211" y="57" width="75.5" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="aWu-OM-HBP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.38823529410000002" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60ml syrup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKa-27-UGU">
+                                <rect key="frame" x="149" y="41" width="57" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="TfU-UD-eID"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.38823529410000002" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Intra Labs Ltd." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Y9-oD-jZv">
+                                <rect key="frame" x="118.5" y="25" width="75" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="dkD-WD-38a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paracetamol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F19-vH-Krw">
+                                <rect key="frame" x="147" y="93" width="66.5" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="YwJ-cV-iZd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.1843137255" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BSC-ix-Dim" firstAttribute="top" secondItem="7o3-GA-46f" secondAttribute="bottom" constant="4" id="1lt-Ii-YLp"/>
+                            <constraint firstAttribute="height" constant="125" id="1ok-y6-0gP"/>
+                            <constraint firstItem="7o3-GA-46f" firstAttribute="leading" secondItem="Kan-b5-tfM" secondAttribute="trailing" constant="31" id="2JS-qr-rC8"/>
+                            <constraint firstItem="E34-of-dq4" firstAttribute="leading" secondItem="Kan-b5-tfM" secondAttribute="trailing" constant="31" id="2oN-jq-dgw"/>
+                            <constraint firstItem="6Y9-oD-jZv" firstAttribute="top" secondItem="po2-Vc-uRT" secondAttribute="bottom" constant="4" id="4DB-sh-aUu"/>
+                            <constraint firstItem="asS-g4-wOr" firstAttribute="leading" secondItem="Kan-b5-tfM" secondAttribute="trailing" constant="31" id="AWp-3e-GOv"/>
+                            <constraint firstItem="LKa-27-UGU" firstAttribute="top" secondItem="6Y9-oD-jZv" secondAttribute="bottom" constant="2" id="DMa-PL-Qpy"/>
+                            <constraint firstItem="F19-vH-Krw" firstAttribute="leading" secondItem="b1h-Re-NC8" secondAttribute="trailing" constant="8" id="Iwu-ky-VQp"/>
+                            <constraint firstAttribute="width" constant="320" id="L1W-wg-a6D"/>
+                            <constraint firstItem="Kan-b5-tfM" firstAttribute="leading" secondItem="QBt-UQ-tVc" secondAttribute="leading" constant="10" id="OWW-iN-5El"/>
+                            <constraint firstItem="F19-vH-Krw" firstAttribute="top" secondItem="BSC-ix-Dim" secondAttribute="bottom" constant="4" id="QLV-BX-wYz"/>
+                            <constraint firstItem="r1s-1q-0IK" firstAttribute="leading" secondItem="7o3-GA-46f" secondAttribute="trailing" constant="5" id="QdR-WD-axh"/>
+                            <constraint firstItem="b1h-Re-NC8" firstAttribute="top" secondItem="BSC-ix-Dim" secondAttribute="bottom" constant="4" id="VY5-02-dxs"/>
+                            <constraint firstItem="BSC-ix-Dim" firstAttribute="leading" secondItem="Kan-b5-tfM" secondAttribute="trailing" constant="31" id="Ved-2V-JOb"/>
+                            <constraint firstItem="E34-of-dq4" firstAttribute="top" secondItem="po2-Vc-uRT" secondAttribute="bottom" constant="4" id="VnZ-f4-nho"/>
+                            <constraint firstItem="3f5-70-Nqd" firstAttribute="top" secondItem="LKa-27-UGU" secondAttribute="bottom" constant="2" id="gFt-K2-D6X"/>
+                            <constraint firstItem="po2-Vc-uRT" firstAttribute="top" secondItem="QBt-UQ-tVc" secondAttribute="top" constant="6" id="gPz-GD-qJf"/>
+                            <constraint firstItem="6Y9-oD-jZv" firstAttribute="leading" secondItem="E34-of-dq4" secondAttribute="trailing" constant="5" id="iC6-XY-KAt"/>
+                            <constraint firstItem="3f5-70-Nqd" firstAttribute="leading" secondItem="r1s-1q-0IK" secondAttribute="trailing" constant="10" id="k0y-do-JMx"/>
+                            <constraint firstItem="po2-Vc-uRT" firstAttribute="leading" secondItem="Kan-b5-tfM" secondAttribute="trailing" constant="31" id="lxq-r0-4kk"/>
+                            <constraint firstItem="r1s-1q-0IK" firstAttribute="top" secondItem="LKa-27-UGU" secondAttribute="bottom" constant="2" id="n0e-R9-Jew"/>
+                            <constraint firstItem="Kan-b5-tfM" firstAttribute="top" secondItem="QBt-UQ-tVc" secondAttribute="top" constant="5" id="nmK-Yf-b3N"/>
+                            <constraint firstItem="LKa-27-UGU" firstAttribute="leading" secondItem="asS-g4-wOr" secondAttribute="trailing" constant="5" id="oSz-or-yyi"/>
+                            <constraint firstItem="7o3-GA-46f" firstAttribute="top" secondItem="asS-g4-wOr" secondAttribute="bottom" constant="2" id="qsY-Yo-PH4"/>
+                            <constraint firstItem="b1h-Re-NC8" firstAttribute="leading" secondItem="Kan-b5-tfM" secondAttribute="trailing" constant="31" id="r2f-kS-4HF"/>
+                            <constraint firstItem="asS-g4-wOr" firstAttribute="top" secondItem="E34-of-dq4" secondAttribute="bottom" constant="2" id="x5t-7i-rgQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="QBt-UQ-tVc" secondAttribute="trailing" constant="-8" id="BPz-x7-5OJ"/>
+                    <constraint firstItem="QBt-UQ-tVc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LqE-sE-q7L"/>
+                    <constraint firstAttribute="bottom" secondItem="QBt-UQ-tVc" secondAttribute="bottom" id="UW9-h3-ztC"/>
+                    <constraint firstItem="QBt-UQ-tVc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xMl-1x-hNk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="76.811594202898561" y="47.209821428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="winopar_250" width="19.5" height="43.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

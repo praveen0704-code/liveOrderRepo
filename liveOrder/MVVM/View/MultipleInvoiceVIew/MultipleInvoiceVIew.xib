@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+        <array key="Quicksand-SemiBold.ttf">
+            <string>Quicksand-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMF-TP-X6u">
+                    <rect key="frame" x="0.0" y="366" width="414" height="530"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invoice" translatesAutoresizingMaskIntoConstraints="NO" id="3w3-xI-t9C">
+                            <rect key="frame" x="177.5" y="48" width="59" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="59" id="9RG-qE-TsX"/>
+                                <constraint firstAttribute="height" constant="72" id="qkz-e5-TtI"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have 2 Invoice to download." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsy-x1-MZP">
+                            <rect key="frame" x="57" y="152" width="300" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="4fe-f7-fkO"/>
+                                <constraint firstAttribute="width" constant="300" id="zWc-sO-pyG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="19"/>
+                            <color key="textColor" red="0.0" green="0.18431372549019609" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZE-tE-4IM">
+                            <rect key="frame" x="72" y="190" width="270" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="270" id="AuJ-KG-4L0"/>
+                                <constraint firstAttribute="height" constant="42" id="Z9y-HC-I31"/>
+                            </constraints>
+                            <string key="text">Please Select down below Invoices to get
+Completes Details of the order.</string>
+                            <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                            <color key="textColor" red="0.050980392156862744" green="0.074509803921568626" blue="0.12941176470588234" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="530" id="Lf9-yu-OWW"/>
+                        <constraint firstItem="lZE-tE-4IM" firstAttribute="centerX" secondItem="vsy-x1-MZP" secondAttribute="centerX" id="Z5B-78-SsM"/>
+                        <constraint firstItem="vsy-x1-MZP" firstAttribute="top" secondItem="3w3-xI-t9C" secondAttribute="bottom" constant="32" id="dG7-Ka-b7o"/>
+                        <constraint firstItem="3w3-xI-t9C" firstAttribute="centerX" secondItem="tMF-TP-X6u" secondAttribute="centerX" id="ebX-ib-rO7"/>
+                        <constraint firstItem="lZE-tE-4IM" firstAttribute="top" secondItem="vsy-x1-MZP" secondAttribute="bottom" constant="14" id="h8O-6Q-aRV"/>
+                        <constraint firstItem="vsy-x1-MZP" firstAttribute="centerX" secondItem="3w3-xI-t9C" secondAttribute="centerX" id="meo-yO-jQs"/>
+                        <constraint firstItem="3w3-xI-t9C" firstAttribute="top" secondItem="tMF-TP-X6u" secondAttribute="top" constant="48" id="nBi-ME-rfc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Djg-Gq-uey">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="358"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="358" id="7Ij-NM-UlU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.035294117647058823" green="0.14117647058823529" blue="0.28235294117647058" alpha="0.54000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Djg-Gq-uey" secondAttribute="trailing" id="4ps-Sf-tmM"/>
+                <constraint firstItem="tMF-TP-X6u" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="34" id="9wn-94-OcJ"/>
+                <constraint firstItem="tMF-TP-X6u" firstAttribute="top" secondItem="Djg-Gq-uey" secondAttribute="bottom" constant="8" symbolic="YES" id="G3p-Uy-E7b"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tMF-TP-X6u" secondAttribute="trailing" id="KLV-0k-DLd"/>
+                <constraint firstItem="tMF-TP-X6u" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="QVU-XS-vsR"/>
+                <constraint firstItem="Djg-Gq-uey" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ql8-eg-yI2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="Djg-Gq-uey" secondAttribute="top" constant="44" id="upX-Uu-zgv"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="51.5625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="invoice" width="44.5" height="54"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

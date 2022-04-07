@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddToCartView" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vgn-5i-49r">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="896" id="Ldz-su-pmG"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RH2-TX-Mgg">
+                    <rect key="frame" x="0.0" y="210" width="414" height="685"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Voe-1c-Zv2">
+                            <rect key="frame" x="179" y="12" width="56" height="6"/>
+                            <color key="backgroundColor" red="0.0" green="0.18431372549019609" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="56" id="k4U-Ft-xrY"/>
+                                <constraint firstAttribute="height" constant="6" id="kIw-gz-tG3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See best schemes, Rate below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzI-p4-qO2">
+                            <rect key="frame" x="17" y="71" width="167.5" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="6E7-fs-89A"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                            <color key="textColor" red="0.035294117647058823" green="0.14117647058823529" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opa-aO-wiS" customClass="DashedLineView" customModule="liveOrder" customModuleProvider="target">
+                            <rect key="frame" x="17" y="99" width="381" height="1"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="F0C-p7-juX"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Seller For Calpol 500 mg Tablet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRW-8D-ONd">
+                            <rect key="frame" x="17" y="26" width="350" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="350" id="fB5-EB-Jh4"/>
+                                <constraint firstAttribute="height" constant="40" id="mMP-XB-sIx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.18431372549019609" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8tN-pC-xHn">
+                            <rect key="frame" x="16" y="110" width="381" height="519"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="519" id="R6h-2B-axJ"/>
+                            </constraints>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Voe-1c-Zv2" firstAttribute="centerX" secondItem="RH2-TX-Mgg" secondAttribute="centerX" id="8bg-BN-HAu"/>
+                        <constraint firstItem="opa-aO-wiS" firstAttribute="top" secondItem="DzI-p4-qO2" secondAttribute="bottom" constant="11" id="Aey-0a-G6h"/>
+                        <constraint firstItem="opa-aO-wiS" firstAttribute="leading" secondItem="RH2-TX-Mgg" secondAttribute="leading" constant="17" id="GFL-sQ-Ihz"/>
+                        <constraint firstItem="Voe-1c-Zv2" firstAttribute="top" secondItem="RH2-TX-Mgg" secondAttribute="top" constant="12" id="GrP-fY-O0L"/>
+                        <constraint firstAttribute="trailing" secondItem="opa-aO-wiS" secondAttribute="trailing" constant="16" id="IV2-zo-C6I"/>
+                        <constraint firstAttribute="trailing" secondItem="8tN-pC-xHn" secondAttribute="trailing" constant="17" id="KZu-OQ-v1G"/>
+                        <constraint firstAttribute="height" constant="685" id="Onk-zO-uTE"/>
+                        <constraint firstItem="8tN-pC-xHn" firstAttribute="leading" secondItem="RH2-TX-Mgg" secondAttribute="leading" constant="16" id="QCE-qm-N74"/>
+                        <constraint firstItem="8tN-pC-xHn" firstAttribute="top" secondItem="opa-aO-wiS" secondAttribute="bottom" constant="10" id="cad-rP-CDZ"/>
+                        <constraint firstItem="DzI-p4-qO2" firstAttribute="top" secondItem="XRW-8D-ONd" secondAttribute="bottom" constant="5" id="gYr-Qx-9tr"/>
+                        <constraint firstItem="XRW-8D-ONd" firstAttribute="leading" secondItem="RH2-TX-Mgg" secondAttribute="leading" constant="17" id="kaz-Wp-ZAY"/>
+                        <constraint firstItem="DzI-p4-qO2" firstAttribute="leading" secondItem="RH2-TX-Mgg" secondAttribute="leading" constant="17" id="rcy-ZG-P6d"/>
+                        <constraint firstItem="XRW-8D-ONd" firstAttribute="top" secondItem="RH2-TX-Mgg" secondAttribute="top" constant="26" id="y0f-vm-yLz"/>
+                        <constraint firstAttribute="width" constant="414" id="yYJ-Hq-goF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.035294117647058823" green="0.14117647058823529" blue="0.28235294117647058" alpha="0.54000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="Vgn-5i-49r" secondAttribute="top" constant="44" id="4D4-tz-C44"/>
+                <constraint firstItem="RH2-TX-Mgg" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="33" id="IZu-kN-OrP"/>
+                <constraint firstItem="RH2-TX-Mgg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NV5-xc-URl"/>
+                <constraint firstItem="Vgn-5i-49r" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SAd-AG-lPr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RH2-TX-Mgg" secondAttribute="trailing" id="TUF-rV-jnS"/>
+                <constraint firstItem="8tN-pC-xHn" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-23" id="VqV-wn-som"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vgn-5i-49r" secondAttribute="trailing" id="l29-QT-HGL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bestSchemesTableView" destination="8tN-pC-xHn" id="kwa-Pg-Fy9"/>
+                <outlet property="blackLbl" destination="Voe-1c-Zv2" id="UzR-Ec-2tf"/>
+                <outlet property="cartMainViewHeightConstraint" destination="Onk-zO-uTE" id="Np1-1M-r1T"/>
+                <outlet property="dotView" destination="opa-aO-wiS" id="gbo-cf-iIT"/>
+                <outlet property="overAllView" destination="RH2-TX-Mgg" id="sv7-Zq-S4y"/>
+                <outlet property="removeView" destination="Vgn-5i-49r" id="fQ2-e0-kXO"/>
+                <outlet property="selectSellerLbl" destination="XRW-8D-ONd" id="mAq-La-rxK"/>
+            </connections>
+            <point key="canvasLocation" x="44.927536231884062" y="48.883928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

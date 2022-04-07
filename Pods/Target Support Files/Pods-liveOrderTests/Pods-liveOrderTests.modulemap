@@ -1,0 +1,6 @@
+framework module Pods_liveOrderTests {
+  umbrella header "Pods-liveOrderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

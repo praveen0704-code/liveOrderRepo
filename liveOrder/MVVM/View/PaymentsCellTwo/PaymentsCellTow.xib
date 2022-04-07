@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PaymentsCellTow" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7k-IT-Twg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pxs-el-7kA">
+                                <rect key="frame" x="5" y="8" width="310" height="134"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google_pay_logo_icon_png" translatesAutoresizingMaskIntoConstraints="NO" id="MtU-ch-vHd">
+                                        <rect key="frame" x="19" y="18" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="9sQ-he-896"/>
+                                            <constraint firstAttribute="height" constant="32" id="sTZ-dn-wk7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google pay (Tez)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XH-ds-w8V">
+                                        <rect key="frame" x="59" y="24" width="127" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="gfa-Wj-znF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="16"/>
+                                        <color key="textColor" red="0.18039215689999999" green="0.24313725489999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycx-k4-nwa" customClass="CheckBox" customModule="liveOrder" customModuleProvider="target">
+                                        <rect key="frame" x="278" y="20" width="20" height="20"/>
+                                        <color key="backgroundColor" red="0.76470588240000004" green="0.80392156859999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Fu0-RQ-WO4"/>
+                                            <constraint firstAttribute="width" constant="20" id="sZU-3q-ivP"/>
+                                        </constraints>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment hua easy with Wallet/UPI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9F-TJ-lUg">
+                                        <rect key="frame" x="59.5" y="52" width="211.5" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="TSn-y2-Yhs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="13"/>
+                                        <color key="textColor" red="0.57647058819999997" green="0.64313725489999995" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVATE PHONE PAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaS-gH-qUl">
+                                        <rect key="frame" x="59.5" y="84" width="144.5" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="Avk-Be-ehN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.4823529412" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="6ah-4r-4Qb"/>
+                                    <constraint firstItem="T9F-TJ-lUg" firstAttribute="top" secondItem="5XH-ds-w8V" secondAttribute="bottom" constant="8" id="EFS-iV-baQ"/>
+                                    <constraint firstItem="RaS-gH-qUl" firstAttribute="top" secondItem="T9F-TJ-lUg" secondAttribute="bottom" constant="16" id="FwE-dg-e7e"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ycx-k4-nwa" secondAttribute="trailing" constant="12" id="QoF-tO-GJ5"/>
+                                    <constraint firstItem="5XH-ds-w8V" firstAttribute="leading" secondItem="MtU-ch-vHd" secondAttribute="trailing" constant="8" id="ZEO-Qq-x2z"/>
+                                    <constraint firstItem="Ycx-k4-nwa" firstAttribute="top" secondItem="Pxs-el-7kA" secondAttribute="top" constant="20" id="buz-yn-NYB"/>
+                                    <constraint firstItem="RaS-gH-qUl" firstAttribute="leading" secondItem="Pxs-el-7kA" secondAttribute="leading" constant="59.5" id="f6h-n6-dyL"/>
+                                    <constraint firstItem="T9F-TJ-lUg" firstAttribute="leading" secondItem="Pxs-el-7kA" secondAttribute="leading" constant="59.5" id="hRv-bO-AJB"/>
+                                    <constraint firstItem="MtU-ch-vHd" firstAttribute="leading" secondItem="Pxs-el-7kA" secondAttribute="leading" constant="19" id="sGZ-em-Tyz"/>
+                                    <constraint firstItem="MtU-ch-vHd" firstAttribute="top" secondItem="Pxs-el-7kA" secondAttribute="top" constant="18" id="x6S-AF-0Zi"/>
+                                    <constraint firstItem="5XH-ds-w8V" firstAttribute="top" secondItem="Pxs-el-7kA" secondAttribute="top" constant="24" id="xHU-f2-eOw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="4CM-M3-UsV"/>
+                            <constraint firstItem="Pxs-el-7kA" firstAttribute="top" secondItem="U7k-IT-Twg" secondAttribute="top" constant="8" id="EyA-jA-fW2"/>
+                            <constraint firstAttribute="trailing" secondItem="Pxs-el-7kA" secondAttribute="trailing" constant="5" id="Ya3-wz-UbY"/>
+                            <constraint firstAttribute="bottom" secondItem="Pxs-el-7kA" secondAttribute="bottom" constant="8" id="hbz-tz-ZZJ"/>
+                            <constraint firstItem="Pxs-el-7kA" firstAttribute="leading" secondItem="U7k-IT-Twg" secondAttribute="leading" constant="5" id="xnB-t6-UTU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="U7k-IT-Twg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0hw-2V-wl7"/>
+                    <constraint firstAttribute="bottom" secondItem="U7k-IT-Twg" secondAttribute="bottom" id="WDE-h1-V0z"/>
+                    <constraint firstItem="U7k-IT-Twg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="beh-Up-zy8"/>
+                    <constraint firstAttribute="trailing" secondItem="U7k-IT-Twg" secondAttribute="trailing" id="w8R-R3-pF4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="PayImgView" destination="MtU-ch-vHd" id="bke-qt-5na"/>
+                <outlet property="activateLbl" destination="RaS-gH-qUl" id="cv8-Zm-6Fq"/>
+                <outlet property="overAllView" destination="U7k-IT-Twg" id="JVu-ms-cfO"/>
+                <outlet property="overView" destination="Pxs-el-7kA" id="5Xv-rq-uTn"/>
+                <outlet property="paymentLbl" destination="5XH-ds-w8V" id="mVR-Ua-ZIW"/>
+                <outlet property="selectBtnone" destination="Ycx-k4-nwa" id="ShW-Wg-YE5"/>
+                <outlet property="upiLblone" destination="T9F-TJ-lUg" id="4fF-3j-D46"/>
+            </connections>
+            <point key="canvasLocation" x="43" y="45"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="google_pay_logo_icon_png" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+        <array key="Quicksand-SemiBold.ttf">
+            <string>Quicksand-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="KGk-i7-Jjw" customClass="SearchVariantsTableCell" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f9C-x6-UVR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abilify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqm-Fb-MSD">
+                                <rect key="frame" x="8" y="9" width="42" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="fzc-Dg-bEA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.18431372549019609" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 Varients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNm-j1-MxL">
+                                <rect key="frame" x="239.5" y="9" width="67.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="mic-oe-Rbp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.1843137255" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ax7-d7-Kf3">
+                                <rect key="frame" x="8" y="78" width="34" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="R3i-e9-3jd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.82745098039215681" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeM-CY-5tj">
+                                <rect key="frame" x="8" y="104" width="299" height="2"/>
+                                <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="VZs-fz-5w2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Micro Labs Pvt. Ltd." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r73-nf-HYu">
+                                <rect key="frame" x="8" y="35" width="223" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="223" id="a3j-ij-BHY"/>
+                                    <constraint firstAttribute="height" priority="750" constant="35" id="peu-Dt-Uz1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ax7-d7-Kf3" firstAttribute="top" secondItem="r73-nf-HYu" secondAttribute="bottom" constant="8" id="AeC-IT-UGx"/>
+                            <constraint firstAttribute="trailing" secondItem="LNm-j1-MxL" secondAttribute="trailing" constant="13" id="IhK-sU-flH"/>
+                            <constraint firstItem="VeM-CY-5tj" firstAttribute="leading" secondItem="f9C-x6-UVR" secondAttribute="leading" constant="8" id="Ncj-Bd-95v"/>
+                            <constraint firstAttribute="trailing" secondItem="VeM-CY-5tj" secondAttribute="trailing" constant="13" id="Tdh-Ul-RSx"/>
+                            <constraint firstItem="eqm-Fb-MSD" firstAttribute="top" secondItem="f9C-x6-UVR" secondAttribute="top" constant="9" id="VRR-52-5Ok"/>
+                            <constraint firstItem="r73-nf-HYu" firstAttribute="top" secondItem="eqm-Fb-MSD" secondAttribute="bottom" constant="8" id="Ws6-2b-tHw"/>
+                            <constraint firstItem="ax7-d7-Kf3" firstAttribute="leading" secondItem="f9C-x6-UVR" secondAttribute="leading" constant="8" id="d6f-s7-YcI"/>
+                            <constraint firstItem="r73-nf-HYu" firstAttribute="leading" secondItem="f9C-x6-UVR" secondAttribute="leading" constant="8" id="e9j-yf-oJa"/>
+                            <constraint firstItem="LNm-j1-MxL" firstAttribute="top" secondItem="f9C-x6-UVR" secondAttribute="top" constant="9" id="hfv-Zv-6bf"/>
+                            <constraint firstItem="eqm-Fb-MSD" firstAttribute="leading" secondItem="f9C-x6-UVR" secondAttribute="leading" constant="8" id="iDX-3h-4mE"/>
+                            <constraint firstItem="VeM-CY-5tj" firstAttribute="top" secondItem="ax7-d7-Kf3" secondAttribute="bottom" constant="8" id="lUZ-by-xeR"/>
+                            <constraint firstAttribute="height" constant="104" id="pRy-gB-THJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="f9C-x6-UVR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3cn-HZ-ew8"/>
+                    <constraint firstAttribute="trailing" secondItem="f9C-x6-UVR" secondAttribute="trailing" id="EtN-PZ-Wgt"/>
+                    <constraint firstAttribute="bottom" secondItem="f9C-x6-UVR" secondAttribute="bottom" id="IGO-7Q-cPm"/>
+                    <constraint firstItem="f9C-x6-UVR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sRa-7B-ZUY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="brandLbl" destination="ax7-d7-Kf3" id="CuZ-6g-I5H"/>
+                <outlet property="microLbl" destination="r73-nf-HYu" id="WVb-dx-gtR"/>
+                <outlet property="overView" destination="f9C-x6-UVR" id="50S-Tt-bM7"/>
+                <outlet property="productLbl" destination="eqm-Fb-MSD" id="2oh-Zq-rbg"/>
+                <outlet property="variantsLbl" destination="LNm-j1-MxL" id="06v-ap-GBV"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="65.625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

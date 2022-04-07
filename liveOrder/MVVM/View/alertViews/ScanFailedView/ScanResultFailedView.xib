@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oKQ-88-jDb" customClass="ScanResultFailedView" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zb-DB-cL0">
+                    <rect key="frame" x="0.0" y="542" width="414" height="320"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanned product result not found " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFk-tv-8Kr">
+                            <rect key="frame" x="20" y="23.5" width="243" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="S5G-Bc-Avf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.1843137255" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYF-7l-XCy">
+                            <rect key="frame" x="378" y="23.5" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="5Bo-hF-q98"/>
+                                <constraint firstAttribute="height" constant="16" id="vUR-vl-gcL"/>
+                            </constraints>
+                            <state key="normal" image="cross"/>
+                            <connections>
+                                <action selector="crossBtnAct:" destination="oKQ-88-jDb" eventType="touchUpInside" id="trU-XR-inv"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can try with normal text search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U10-NF-pt0">
+                            <rect key="frame" x="20" y="48.5" width="197" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="DoQ-Au-zwE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                            <color key="textColor" red="0.35686274509999999" green="0.38823529410000002" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type here for search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dKs-04-p0L">
+                            <rect key="frame" x="20" y="108" width="374" height="44"/>
+                            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="WCy-xK-lo5"/>
+                            </constraints>
+                            <color key="textColor" red="0.47843137250000001" green="0.50588235290000005" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="search_icon"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOp-sl-EUF">
+                            <rect key="frame" x="20" y="87" width="374" height="1"/>
+                            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ZqG-cu-y20"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="iYF-7l-XCy" secondAttribute="trailing" constant="20" id="0we-nQ-p3O"/>
+                        <constraint firstItem="iYF-7l-XCy" firstAttribute="top" secondItem="8zb-DB-cL0" secondAttribute="top" constant="23.5" id="DKj-er-QKI"/>
+                        <constraint firstItem="sOp-sl-EUF" firstAttribute="leading" secondItem="8zb-DB-cL0" secondAttribute="leading" constant="20" id="Tkj-L9-5kN"/>
+                        <constraint firstItem="sOp-sl-EUF" firstAttribute="top" secondItem="U10-NF-pt0" secondAttribute="bottom" constant="21.5" id="Vcf-Ad-HWp"/>
+                        <constraint firstItem="BFk-tv-8Kr" firstAttribute="top" secondItem="8zb-DB-cL0" secondAttribute="top" constant="23.5" id="hnA-PI-GYJ"/>
+                        <constraint firstAttribute="height" constant="320" id="lBP-8O-Fff"/>
+                        <constraint firstItem="BFk-tv-8Kr" firstAttribute="leading" secondItem="8zb-DB-cL0" secondAttribute="leading" constant="20" id="mIP-lv-Qxu"/>
+                        <constraint firstItem="dKs-04-p0L" firstAttribute="leading" secondItem="8zb-DB-cL0" secondAttribute="leading" constant="20" id="nLp-Jp-xo5"/>
+                        <constraint firstAttribute="trailing" secondItem="sOp-sl-EUF" secondAttribute="trailing" constant="20" id="nUs-YS-9aB"/>
+                        <constraint firstItem="U10-NF-pt0" firstAttribute="leading" secondItem="8zb-DB-cL0" secondAttribute="leading" constant="20" id="pgB-YB-mgq"/>
+                        <constraint firstAttribute="trailing" secondItem="dKs-04-p0L" secondAttribute="trailing" constant="20" id="pxZ-VN-n04"/>
+                        <constraint firstItem="U10-NF-pt0" firstAttribute="top" secondItem="BFk-tv-8Kr" secondAttribute="bottom" constant="4" id="xfC-wQ-h6g"/>
+                        <constraint firstItem="dKs-04-p0L" firstAttribute="top" secondItem="sOp-sl-EUF" secondAttribute="bottom" constant="20" id="yOS-o2-gCo"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRY AGAIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oih-nC-v0i">
+                    <rect key="frame" x="312.5" y="509" width="81.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="aLz-W4-63Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="k0G-ZK-vYW"/>
+            <color key="backgroundColor" red="0.035294117647058823" green="0.14117647058823529" blue="0.28235294117647058" alpha="0.54000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="k0G-ZK-vYW" firstAttribute="trailing" secondItem="Oih-nC-v0i" secondAttribute="trailing" constant="20" id="00o-ce-am7"/>
+                <constraint firstItem="8zb-DB-cL0" firstAttribute="leading" secondItem="k0G-ZK-vYW" secondAttribute="leading" id="RCw-jC-Bp3"/>
+                <constraint firstItem="8zb-DB-cL0" firstAttribute="bottom" secondItem="k0G-ZK-vYW" secondAttribute="bottom" id="SeR-f6-t3h"/>
+                <constraint firstItem="8zb-DB-cL0" firstAttribute="top" secondItem="Oih-nC-v0i" secondAttribute="bottom" constant="12" id="YRs-gh-7mL"/>
+                <constraint firstItem="k0G-ZK-vYW" firstAttribute="trailing" secondItem="8zb-DB-cL0" secondAttribute="trailing" id="gck-dD-eOH"/>
+                <constraint firstItem="8zb-DB-cL0" firstAttribute="top" secondItem="k0G-ZK-vYW" secondAttribute="top" priority="750" constant="530" id="qNQ-me-RLi"/>
+            </constraints>
+            <connections>
+                <outlet property="crossBtn" destination="iYF-7l-XCy" id="z7I-E1-6qY"/>
+                <outlet property="lineLbl" destination="sOp-sl-EUF" id="Htz-qc-hfv"/>
+                <outlet property="overAllView" destination="8zb-DB-cL0" id="0VC-UI-ccI"/>
+                <outlet property="scannedproductLbl" destination="BFk-tv-8Kr" id="sKR-v0-PtR"/>
+                <outlet property="searchTxtField" destination="dKs-04-p0L" id="nls-DB-FuT"/>
+                <outlet property="traAgainLbl" destination="Oih-nC-v0i" id="oKh-QN-ZeY"/>
+                <outlet property="tryWithSearchLbl" destination="U10-NF-pt0" id="hpT-Tx-XhZ"/>
+            </connections>
+            <point key="canvasLocation" x="856" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cross" width="12" height="12"/>
+        <image name="search_icon" width="24.5" height="24"/>
+    </resources>
+</document>

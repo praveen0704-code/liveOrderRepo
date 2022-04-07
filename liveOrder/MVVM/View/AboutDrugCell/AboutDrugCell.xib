@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="178" id="KGk-i7-Jjw" customClass="AboutDrugCell" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgl-H4-CeX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="174"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT DRUG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCn-5b-3qM">
+                                <rect key="frame" x="5" y="12" width="90.5" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="KMV-mA-5g7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.18431372549019609" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eoc-UT-W53">
+                                <rect key="frame" x="5" y="43" width="68.5" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="MkW-dC-Bj1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gd4-5r-UbG">
+                                <rect key="frame" x="5" y="66" width="310" height="101"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="Dbu-TF-gNX"/>
+                                </constraints>
+                                <string key="text">A drug that lowers tension and stress without side effects
+• Contains internationally acknowledged, natural anxiolytic
+• Has sedative and calming effect
+• Controls depression
+• Reduces melancholia.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hCn-5b-3qM" firstAttribute="top" secondItem="sgl-H4-CeX" secondAttribute="top" constant="12" id="4X1-HW-t2u"/>
+                            <constraint firstAttribute="height" constant="174" id="AKj-CF-yas"/>
+                            <constraint firstItem="Gd4-5r-UbG" firstAttribute="leading" secondItem="sgl-H4-CeX" secondAttribute="leading" constant="5" id="BbU-6a-2r2"/>
+                            <constraint firstItem="hCn-5b-3qM" firstAttribute="leading" secondItem="sgl-H4-CeX" secondAttribute="leading" constant="5" id="DIc-ce-Pss"/>
+                            <constraint firstItem="Eoc-UT-W53" firstAttribute="leading" secondItem="sgl-H4-CeX" secondAttribute="leading" constant="5" id="di1-aq-oeD"/>
+                            <constraint firstAttribute="trailing" secondItem="Gd4-5r-UbG" secondAttribute="trailing" constant="5" id="giL-Vk-KMh"/>
+                            <constraint firstItem="Eoc-UT-W53" firstAttribute="top" secondItem="hCn-5b-3qM" secondAttribute="bottom" constant="15" id="nji-y3-3KC"/>
+                            <constraint firstItem="Gd4-5r-UbG" firstAttribute="top" secondItem="Eoc-UT-W53" secondAttribute="bottom" constant="8" id="wdU-aW-Kk4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sgl-H4-CeX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="V0r-Lq-B0T"/>
+                    <constraint firstAttribute="trailing" secondItem="sgl-H4-CeX" secondAttribute="trailing" id="fcP-Hp-iyR"/>
+                    <constraint firstItem="sgl-H4-CeX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rAa-JS-TXI"/>
+                    <constraint firstAttribute="bottom" secondItem="sgl-H4-CeX" secondAttribute="bottom" constant="5" id="vq3-LI-Hr4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="aboutDrugLbl" destination="hCn-5b-3qM" id="Zig-mf-UFn"/>
+                <outlet property="desLbl" destination="Eoc-UT-W53" id="8Jm-K4-j8a"/>
+                <outlet property="desTxtView" destination="Gd4-5r-UbG" id="Rqp-Fm-8BF"/>
+                <outlet property="overView" destination="sgl-H4-CeX" id="fhP-Wf-cCt"/>
+            </connections>
+            <point key="canvasLocation" x="53.623188405797109" y="89.732142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

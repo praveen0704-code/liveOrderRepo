@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="Txf-Zs-8Ne" customClass="TopSearchCollectionViewCell" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="221"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="221"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVJ-me-MUD">
+                        <rect key="frame" x="5" y="41" width="130" height="169"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pack Size: 60ml syrup" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uG-g1-IEJ">
+                                <rect key="frame" x="2" y="105" width="122" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="NlB-V6-R3V"/>
+                                    <constraint firstAttribute="height" constant="15" id="keo-bW-Y9U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.57254901960000004" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MRP   38.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toj-z9-6Jh">
+                                <rect key="frame" x="2" y="127" width="119" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="8oh-Uo-uVd"/>
+                                    <constraint firstAttribute="height" constant="14" id="NlW-u4-PZl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contains" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlX-T0-pg9">
+                                <rect key="frame" x="3" y="147" width="45" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="lWb-R2-ATw"/>
+                                    <constraint firstAttribute="height" constant="14" id="puU-de-LSi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.57254901960000004" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dolo 250 MG Syrup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKy-IN-Xmk">
+                                <rect key="frame" x="3" y="87" width="124" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="mbB-ku-5ds"/>
+                                    <constraint firstAttribute="width" constant="124" id="vrc-OW-vtn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" red="0.050980392159999999" green="0.074509803920000006" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refort_syrup" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-am-T7E">
+                                <rect key="frame" x="14" y="11" width="97" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="Tol-Ci-fFz"/>
+                                    <constraint firstAttribute="width" constant="97" id="pAK-kR-Y8F"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paracetamol" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJD-mb-67E">
+                                <rect key="frame" x="49" y="147" width="79" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="ehE-mn-G2n"/>
+                                    <constraint firstAttribute="width" constant="79" id="fM7-pt-CWc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.1843137255" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40% off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wz7-Ar-syw">
+                                <rect key="frame" x="79" y="128" width="42" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="8Xl-9P-ph1"/>
+                                    <constraint firstAttribute="height" constant="11" id="eXR-CE-v6Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.40392156862745099" green="0.29803921568627451" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DM-BI-pEb">
+                                <rect key="frame" x="8" y="6" width="24" height="24"/>
+                                <color key="backgroundColor" red="0.40392156862745099" green="0.29803921568627451" blue="0.95294117647058818" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="2Tl-QK-XF4"/>
+                                    <constraint firstAttribute="width" constant="24" id="e9m-Ca-BAC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Reliance Grocery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ej0-hA-uXw">
+                                <rect key="frame" x="3" y="147" width="127" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="bpJ-5q-PK8"/>
+                                    <constraint firstAttribute="width" constant="127" id="fcV-OX-vSq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                <color key="textColor" red="0.5725490196078431" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.24705882352941178" blue="0.5490196078431373" alpha="0.01" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="toj-z9-6Jh" firstAttribute="leading" secondItem="HVJ-me-MUD" secondAttribute="leading" constant="2" id="0dl-Zp-WDr"/>
+                            <constraint firstAttribute="bottom" secondItem="UJD-mb-67E" secondAttribute="bottom" constant="8" id="0rO-Nn-9As"/>
+                            <constraint firstItem="9uG-g1-IEJ" firstAttribute="top" secondItem="mKy-IN-Xmk" secondAttribute="bottom" constant="-1" id="7Lq-cy-lKm"/>
+                            <constraint firstItem="LgU-am-T7E" firstAttribute="top" secondItem="HVJ-me-MUD" secondAttribute="top" constant="11" id="BGt-nP-amC"/>
+                            <constraint firstAttribute="trailing" secondItem="wz7-Ar-syw" secondAttribute="trailing" constant="9" id="CI8-yh-lDO"/>
+                            <constraint firstItem="mKy-IN-Xmk" firstAttribute="leading" secondItem="HVJ-me-MUD" secondAttribute="leading" constant="3" id="DSn-l9-MYU"/>
+                            <constraint firstAttribute="trailing" secondItem="ej0-hA-uXw" secondAttribute="trailing" id="Flz-N9-LCG"/>
+                            <constraint firstItem="ej0-hA-uXw" firstAttribute="top" secondItem="toj-z9-6Jh" secondAttribute="bottom" constant="6" id="Gb0-KU-21i"/>
+                            <constraint firstItem="wz7-Ar-syw" firstAttribute="top" secondItem="9uG-g1-IEJ" secondAttribute="bottom" constant="8" symbolic="YES" id="KWz-oj-4pT"/>
+                            <constraint firstAttribute="bottom" secondItem="AlX-T0-pg9" secondAttribute="bottom" constant="8" id="LpP-vd-ish"/>
+                            <constraint firstAttribute="bottom" secondItem="ej0-hA-uXw" secondAttribute="bottom" constant="8" id="MYP-v0-ULg"/>
+                            <constraint firstItem="2DM-BI-pEb" firstAttribute="top" secondItem="HVJ-me-MUD" secondAttribute="top" constant="6" id="N63-Ma-afP"/>
+                            <constraint firstAttribute="height" constant="169" id="RLL-Gd-oF3"/>
+                            <constraint firstItem="UJD-mb-67E" firstAttribute="top" secondItem="toj-z9-6Jh" secondAttribute="bottom" constant="6" id="Vws-1H-8bH"/>
+                            <constraint firstItem="UJD-mb-67E" firstAttribute="top" secondItem="wz7-Ar-syw" secondAttribute="bottom" constant="8" symbolic="YES" id="a94-EJ-9Ty"/>
+                            <constraint firstItem="LgU-am-T7E" firstAttribute="leading" secondItem="HVJ-me-MUD" secondAttribute="leading" constant="14" id="aLJ-sd-cuQ"/>
+                            <constraint firstItem="ej0-hA-uXw" firstAttribute="leading" secondItem="HVJ-me-MUD" secondAttribute="leading" constant="3" id="eEO-UN-kof"/>
+                            <constraint firstAttribute="width" constant="130" id="hYk-u2-PPq"/>
+                            <constraint firstItem="mKy-IN-Xmk" firstAttribute="top" secondItem="LgU-am-T7E" secondAttribute="bottom" constant="4" id="i27-fB-Hta"/>
+                            <constraint firstItem="9uG-g1-IEJ" firstAttribute="leading" secondItem="HVJ-me-MUD" secondAttribute="leading" constant="2" id="liG-EC-NTH"/>
+                            <constraint firstItem="AlX-T0-pg9" firstAttribute="leading" secondItem="HVJ-me-MUD" secondAttribute="leading" constant="3" id="ntz-pk-Z1A"/>
+                            <constraint firstItem="2DM-BI-pEb" firstAttribute="leading" secondItem="HVJ-me-MUD" secondAttribute="leading" constant="8" id="pxD-nH-g1m"/>
+                            <constraint firstItem="toj-z9-6Jh" firstAttribute="top" secondItem="9uG-g1-IEJ" secondAttribute="bottom" constant="7" id="srh-yH-9vV"/>
+                            <constraint firstItem="AlX-T0-pg9" firstAttribute="top" secondItem="toj-z9-6Jh" secondAttribute="bottom" constant="6" id="yDk-a4-1Sp"/>
+                            <constraint firstAttribute="trailing" secondItem="UJD-mb-67E" secondAttribute="trailing" constant="2" id="z9X-aD-wzr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="gep-fz-9Ks"/>
+            <constraints>
+                <constraint firstItem="gep-fz-9Ks" firstAttribute="top" secondItem="HVJ-me-MUD" secondAttribute="top" constant="3" id="0Jh-v0-f9y"/>
+                <constraint firstItem="gep-fz-9Ks" firstAttribute="bottom" secondItem="HVJ-me-MUD" secondAttribute="bottom" constant="11" id="LRf-Kh-Vc9"/>
+                <constraint firstItem="HVJ-me-MUD" firstAttribute="leading" secondItem="gep-fz-9Ks" secondAttribute="leading" constant="5" id="LxV-L8-kVi"/>
+                <constraint firstItem="gep-fz-9Ks" firstAttribute="trailing" secondItem="HVJ-me-MUD" secondAttribute="trailing" constant="5" id="Mal-6B-eyF"/>
+            </constraints>
+            <size key="customSize" width="299" height="228"/>
+            <connections>
+                <outlet property="addLabel" destination="2DM-BI-pEb" id="0nN-HM-tLF"/>
+                <outlet property="comPanyNameLabel" destination="ej0-hA-uXw" id="3D7-JB-nge"/>
+                <outlet property="containerLabel" destination="AlX-T0-pg9" id="ccO-WT-Iv4"/>
+                <outlet property="offerLabel" destination="wz7-Ar-syw" id="VEj-dH-jOe"/>
+                <outlet property="prdPricelabel" destination="toj-z9-6Jh" id="h7B-dm-XBa"/>
+                <outlet property="proContailsLabel" destination="UJD-mb-67E" id="AXy-iW-GSY"/>
+                <outlet property="proNameLabel" destination="mKy-IN-Xmk" id="94A-04-D0F"/>
+                <outlet property="proQutLabel" destination="9uG-g1-IEJ" id="70b-GX-xVp"/>
+                <outlet property="productImgView" destination="LgU-am-T7E" id="aNK-KF-F1l"/>
+            </connections>
+            <point key="canvasLocation" x="286.95652173913044" y="400.11160714285711"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="refort_syrup" width="60" height="144"/>
+    </resources>
+</document>

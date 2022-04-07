@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ChangeInnerCell" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7VW-uR-rgH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banshankari 3rd stage(MTR)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2P-Xl-VSK">
+                                <rect key="frame" x="24" y="12" width="235" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="bmT-GC-bzT"/>
+                                    <constraint firstAttribute="height" constant="16" id="oDW-W2-yaN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="13"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbG-mx-SaB">
+                                <rect key="frame" x="272" y="7" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="BTX-w5-f3b"/>
+                                    <constraint firstAttribute="height" constant="24" id="kaI-YA-mxq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="or9-V1-IlY">
+                                <rect key="frame" x="24" y="36" width="272" height="1"/>
+                                <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Uor-BT-BC7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="1aE-co-1Li"/>
+                            <constraint firstAttribute="trailing" secondItem="bbG-mx-SaB" secondAttribute="trailing" constant="24" id="Pog-7t-ChO"/>
+                            <constraint firstItem="or9-V1-IlY" firstAttribute="top" secondItem="bbG-mx-SaB" secondAttribute="bottom" constant="5" id="jPp-gA-BK5"/>
+                            <constraint firstItem="g2P-Xl-VSK" firstAttribute="top" secondItem="7VW-uR-rgH" secondAttribute="top" constant="12" id="kPb-8V-Pg7"/>
+                            <constraint firstItem="or9-V1-IlY" firstAttribute="leading" secondItem="7VW-uR-rgH" secondAttribute="leading" constant="24" id="lOH-kC-d7r"/>
+                            <constraint firstAttribute="trailing" secondItem="or9-V1-IlY" secondAttribute="trailing" constant="24" id="rYj-QV-ApW"/>
+                            <constraint firstItem="bbG-mx-SaB" firstAttribute="top" secondItem="7VW-uR-rgH" secondAttribute="top" constant="7" id="rzq-j6-dI6"/>
+                            <constraint firstItem="g2P-Xl-VSK" firstAttribute="leading" secondItem="7VW-uR-rgH" secondAttribute="leading" constant="24" id="zbr-Kl-qE8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7VW-uR-rgH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NMw-m2-DDf"/>
+                    <constraint firstItem="7VW-uR-rgH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="V0j-Py-PKl"/>
+                    <constraint firstAttribute="trailing" secondItem="7VW-uR-rgH" secondAttribute="trailing" id="g7N-c6-X4O"/>
+                    <constraint firstAttribute="bottom" secondItem="7VW-uR-rgH" secondAttribute="bottom" id="t9U-KG-T4r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="branchLbl" destination="g2P-Xl-VSK" id="rMj-YB-5SU"/>
+                <outlet property="checkBtn" destination="bbG-mx-SaB" id="Gyk-6W-Uvb"/>
+                <outlet property="overView" destination="7VW-uR-rgH" id="3Re-KY-SZG"/>
+            </connections>
+            <point key="canvasLocation" x="69.565217391304358" y="51.5625"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="bbG-mx-SaB">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="598" id="KGk-i7-Jjw" customClass="FirmInfoTableViewCell" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="598"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="598"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXZ-H6-SSp">
+                        <rect key="frame" x="0.0" y="0.0" width="324" height="598"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firm Contact Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhn-Dc-Feo">
+                                <rect key="frame" x="16" y="5" width="147" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="fek-OZ-Cc9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" red="0.76470588235294112" green="0.80392156862745101" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact Person Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FQ6-nb-d60" customClass="WhiteUITextField" customModule="liveOrder" customModuleProvider="target">
+                                <rect key="frame" x="16" y="32" width="292" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="8Ik-qT-8Fk"/>
+                                </constraints>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76470588235294112" green="0.80392156862745101" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="usericon"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address Line 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i0r-AH-bSg" customClass="WhiteUITextField" customModule="liveOrder" customModuleProvider="target">
+                                <rect key="frame" x="16" y="104" width="292" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="zAT-I3-BI2"/>
+                                </constraints>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76470588240000004" green="0.80392156859999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="addressicon"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address Line 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gVN-BG-3pw" customClass="WhiteUITextField" customModule="liveOrder" customModuleProvider="target">
+                                <rect key="frame" x="16" y="176" width="292" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ral-nC-Zq8"/>
+                                </constraints>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76470588240000004" green="0.80392156859999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="addressicon"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arO-jF-9JR" customClass="DropDown" customModule="iOSDropDown">
+                                <rect key="frame" x="16" y="320" width="292" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="fxn-tM-Fmt"/>
+                                </constraints>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76470588240000004" green="0.80392156859999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="usericon"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6T-aJ-UX6" customClass="DropDown" customModule="iOSDropDown">
+                                <rect key="frame" x="16" y="392" width="292" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="NWJ-XW-HN4"/>
+                                </constraints>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76470588240000004" green="0.80392156859999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="usericon"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search or Select area" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eMZ-LH-xKF" customClass="DropDown" customModule="iOSDropDown">
+                                <rect key="frame" x="16" y="464" width="292" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="mNp-b2-A8q"/>
+                                </constraints>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76470588240000004" green="0.80392156859999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="usericon"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pin Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WM4-Eu-s3f" customClass="WhiteUITextField" customModule="liveOrder" customModuleProvider="target">
+                                <rect key="frame" x="16" y="248" width="292" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="7SS-Y7-4ru"/>
+                                </constraints>
+                                <color key="textColor" red="0.35686274509803922" green="0.38823529411764707" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76470588240000004" green="0.80392156859999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="pincodeicon"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jhn-Dc-Feo" firstAttribute="top" secondItem="wXZ-H6-SSp" secondAttribute="top" constant="5" id="1U5-QJ-mEb"/>
+                            <constraint firstItem="gVN-BG-3pw" firstAttribute="leading" secondItem="wXZ-H6-SSp" secondAttribute="leading" constant="16" id="6Nr-TX-RVW"/>
+                            <constraint firstItem="WM4-Eu-s3f" firstAttribute="top" secondItem="gVN-BG-3pw" secondAttribute="bottom" constant="20" id="7rx-aF-ANJ"/>
+                            <constraint firstAttribute="trailing" secondItem="i0r-AH-bSg" secondAttribute="trailing" constant="16" id="CwN-eh-3oX"/>
+                            <constraint firstItem="arO-jF-9JR" firstAttribute="top" secondItem="WM4-Eu-s3f" secondAttribute="bottom" constant="20" id="Iyc-jI-HIO"/>
+                            <constraint firstAttribute="height" constant="598" id="JWC-R7-nXf"/>
+                            <constraint firstItem="i0r-AH-bSg" firstAttribute="leading" secondItem="wXZ-H6-SSp" secondAttribute="leading" constant="16" id="NXi-nr-wlM"/>
+                            <constraint firstAttribute="trailing" secondItem="v6T-aJ-UX6" secondAttribute="trailing" constant="16" id="NYJ-YE-UqV"/>
+                            <constraint firstItem="arO-jF-9JR" firstAttribute="leading" secondItem="wXZ-H6-SSp" secondAttribute="leading" constant="16" id="SBc-MG-c1y"/>
+                            <constraint firstItem="FQ6-nb-d60" firstAttribute="leading" secondItem="wXZ-H6-SSp" secondAttribute="leading" constant="16" id="SXG-Fp-hi5"/>
+                            <constraint firstItem="eMZ-LH-xKF" firstAttribute="leading" secondItem="wXZ-H6-SSp" secondAttribute="leading" constant="16" id="ToI-cF-kKC"/>
+                            <constraint firstItem="v6T-aJ-UX6" firstAttribute="top" secondItem="arO-jF-9JR" secondAttribute="bottom" constant="20" id="Uy9-zz-Kon"/>
+                            <constraint firstAttribute="trailing" secondItem="WM4-Eu-s3f" secondAttribute="trailing" constant="16" id="bII-s1-tW8"/>
+                            <constraint firstAttribute="trailing" secondItem="arO-jF-9JR" secondAttribute="trailing" constant="16" id="fPz-h7-ECK"/>
+                            <constraint firstItem="jhn-Dc-Feo" firstAttribute="leading" secondItem="wXZ-H6-SSp" secondAttribute="leading" constant="16" id="hoi-QI-gVK"/>
+                            <constraint firstItem="i0r-AH-bSg" firstAttribute="top" secondItem="FQ6-nb-d60" secondAttribute="bottom" constant="20" id="iyv-gp-6Dp"/>
+                            <constraint firstItem="gVN-BG-3pw" firstAttribute="top" secondItem="i0r-AH-bSg" secondAttribute="bottom" constant="20" id="kMk-Tk-VIO"/>
+                            <constraint firstItem="WM4-Eu-s3f" firstAttribute="leading" secondItem="wXZ-H6-SSp" secondAttribute="leading" constant="16" id="o94-vB-B92"/>
+                            <constraint firstAttribute="trailing" secondItem="gVN-BG-3pw" secondAttribute="trailing" constant="16" id="p7p-NM-CiJ"/>
+                            <constraint firstItem="eMZ-LH-xKF" firstAttribute="top" secondItem="v6T-aJ-UX6" secondAttribute="bottom" constant="20" id="prx-hY-4hy"/>
+                            <constraint firstAttribute="trailing" secondItem="FQ6-nb-d60" secondAttribute="trailing" constant="16" id="q1P-71-iP1"/>
+                            <constraint firstItem="v6T-aJ-UX6" firstAttribute="leading" secondItem="wXZ-H6-SSp" secondAttribute="leading" constant="16" id="rTp-EQ-xN9"/>
+                            <constraint firstItem="FQ6-nb-d60" firstAttribute="top" secondItem="jhn-Dc-Feo" secondAttribute="bottom" constant="12" id="tvv-0b-tLr"/>
+                            <constraint firstAttribute="trailing" secondItem="eMZ-LH-xKF" secondAttribute="trailing" constant="16" id="zH7-h7-byJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wXZ-H6-SSp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6Bq-vP-bCD"/>
+                    <constraint firstItem="wXZ-H6-SSp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DoR-jX-jBL"/>
+                    <constraint firstAttribute="trailing" secondItem="wXZ-H6-SSp" secondAttribute="trailing" id="SmA-f8-mfI"/>
+                    <constraint firstAttribute="bottom" secondItem="wXZ-H6-SSp" secondAttribute="bottom" id="uZL-1I-tFl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addOneTxtField" destination="i0r-AH-bSg" id="PEf-qa-G0b"/>
+                <outlet property="addTwoTxtField" destination="gVN-BG-3pw" id="Jgs-Or-1Qp"/>
+                <outlet property="areaDropDown" destination="eMZ-LH-xKF" id="y2t-5s-cqE"/>
+                <outlet property="cityDropDown" destination="v6T-aJ-UX6" id="HaQ-0n-GgQ"/>
+                <outlet property="contactTxtField" destination="FQ6-nb-d60" id="FOG-w4-5Ez"/>
+                <outlet property="firmInfoLbl" destination="jhn-Dc-Feo" id="3Dq-IK-Dar"/>
+                <outlet property="overView" destination="wXZ-H6-SSp" id="GMo-rR-IdG"/>
+                <outlet property="pinTxtField" destination="WM4-Eu-s3f" id="ViO-eZ-B8a"/>
+                <outlet property="stateDropDown" destination="arO-jF-9JR" id="2tR-yK-oLT"/>
+            </connections>
+            <point key="canvasLocation" x="72.463768115942031" y="83.705357142857139"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="FQ6-nb-d60">
+            <size key="intrinsicContentSize" width="141.5" height="18.5"/>
+        </designable>
+        <designable name="WM4-Eu-s3f">
+            <size key="intrinsicContentSize" width="58.5" height="18.5"/>
+        </designable>
+        <designable name="arO-jF-9JR">
+            <size key="intrinsicContentSize" width="34" height="18.5"/>
+        </designable>
+        <designable name="eMZ-LH-xKF">
+            <size key="intrinsicContentSize" width="138.5" height="18.5"/>
+        </designable>
+        <designable name="gVN-BG-3pw">
+            <size key="intrinsicContentSize" width="96" height="18.5"/>
+        </designable>
+        <designable name="i0r-AH-bSg">
+            <size key="intrinsicContentSize" width="94" height="18.5"/>
+        </designable>
+        <designable name="v6T-aJ-UX6">
+            <size key="intrinsicContentSize" width="26" height="18.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="addressicon" width="11.5" height="11.5"/>
+        <image name="pincodeicon" width="11.5" height="8.5"/>
+        <image name="usericon" width="10.5" height="12"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

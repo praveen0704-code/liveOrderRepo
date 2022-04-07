@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CardOneTableCelll" customModule="liveOrder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="187"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="187"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="msi-5m-MCL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="187"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle_20" translatesAutoresizingMaskIntoConstraints="NO" id="T49-yK-sJQ">
+                                <rect key="frame" x="2" y="2" width="316" height="168"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="fox-63-1Rt"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEy-zp-Act">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google_pay_logo_icon_png" translatesAutoresizingMaskIntoConstraints="NO" id="Sy3-yp-kav">
+                                        <rect key="frame" x="20" y="24" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="7da-FU-F7O"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axis Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4x-2o-1YT">
+                                        <rect key="frame" x="52" y="27" width="63" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="xpp-U7-z9J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                        <color key="textColor" red="0.18039215689999999" green="0.24313725489999999" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5678 01** **** ** 4488 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES7-e7-y5Y">
+                                        <rect key="frame" x="20" y="68" width="219" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="fPU-Ai-sdH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="23"/>
+                                        <color key="textColor" red="0.18039215689999999" green="0.24313725489999999" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Holder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apb-Lh-2i3">
+                                        <rect key="frame" x="20" y="117" width="62.5" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="pgu-kg-Jaz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                        <color key="textColor" red="0.57647058819999997" green="0.64313725489999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajay Dadhich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMR-ey-0er">
+                                        <rect key="frame" x="20" y="133" width="100.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="i5C-tN-t22"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
+                                        <color key="textColor" red="0.57647058819999997" green="0.64313725489999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid Till" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9C-y3-vhj">
+                                        <rect key="frame" x="152.5" y="117" width="43.5" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="iKK-zd-bnh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                        <color key="textColor" red="0.57647058819999997" green="0.64313725489999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07/23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUI-Cz-0rG">
+                                        <rect key="frame" x="152.5" y="133" width="45" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="6AA-8e-XY9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
+                                        <color key="textColor" red="0.57647058819999997" green="0.64313725489999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pay" translatesAutoresizingMaskIntoConstraints="NO" id="ls5-PL-6R1">
+                                        <rect key="frame" x="285" y="29" width="17" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="7vV-rQ-y4W"/>
+                                            <constraint firstAttribute="width" constant="17" id="JAm-Wc-Vco"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visa Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kns-1y-hla">
+                                        <rect key="frame" x="252.5" y="48" width="49.5" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="CYj-Ew-lh6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                        <color key="textColor" red="0.57647058819999997" green="0.64313725489999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYm-QP-btU">
+                                        <rect key="frame" x="270" y="119" width="32" height="32"/>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.90588235289999997" blue="0.81176470590000005" alpha="0.30877483439999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="QFK-GO-1eU"/>
+                                            <constraint firstAttribute="width" constant="32" id="onG-J8-caa"/>
+                                        </constraints>
+                                        <state key="normal" image="deletered"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.98039215686274506" blue="0.97647058823529409" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ls5-PL-6R1" secondAttribute="trailing" constant="18" id="02A-ck-eBg"/>
+                                    <constraint firstItem="t9C-y3-vhj" firstAttribute="top" secondItem="ES7-e7-y5Y" secondAttribute="bottom" constant="20" id="1is-qI-Aaq"/>
+                                    <constraint firstItem="Apb-Lh-2i3" firstAttribute="leading" secondItem="zEy-zp-Act" secondAttribute="leading" constant="20" id="3kO-CQ-9ZY"/>
+                                    <constraint firstAttribute="trailing" secondItem="kns-1y-hla" secondAttribute="trailing" constant="18" id="3rc-VB-Qq4"/>
+                                    <constraint firstItem="ES7-e7-y5Y" firstAttribute="top" secondItem="b4x-2o-1YT" secondAttribute="bottom" constant="23" id="3yL-X5-Z0j"/>
+                                    <constraint firstItem="Apb-Lh-2i3" firstAttribute="top" secondItem="ES7-e7-y5Y" secondAttribute="bottom" constant="20" id="5md-af-3Al"/>
+                                    <constraint firstItem="LYm-QP-btU" firstAttribute="top" secondItem="kns-1y-hla" secondAttribute="bottom" constant="57" id="6Iq-rU-FAd"/>
+                                    <constraint firstItem="Sy3-yp-kav" firstAttribute="top" secondItem="zEy-zp-Act" secondAttribute="top" constant="24" id="Dmc-XE-uvs"/>
+                                    <constraint firstItem="jUI-Cz-0rG" firstAttribute="top" secondItem="t9C-y3-vhj" secondAttribute="bottom" constant="2" id="KAH-QF-ifH"/>
+                                    <constraint firstItem="t9C-y3-vhj" firstAttribute="leading" secondItem="Apb-Lh-2i3" secondAttribute="trailing" constant="70" id="N60-Or-Mia"/>
+                                    <constraint firstItem="b4x-2o-1YT" firstAttribute="top" secondItem="zEy-zp-Act" secondAttribute="top" constant="27" id="OA8-7L-wkH"/>
+                                    <constraint firstItem="KMR-ey-0er" firstAttribute="top" secondItem="Apb-Lh-2i3" secondAttribute="bottom" constant="2" id="X1x-cl-4SZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="LYm-QP-btU" secondAttribute="trailing" constant="18" id="aPm-dL-3b0"/>
+                                    <constraint firstItem="KMR-ey-0er" firstAttribute="leading" secondItem="zEy-zp-Act" secondAttribute="leading" constant="20" id="ayG-PI-Ont"/>
+                                    <constraint firstItem="kns-1y-hla" firstAttribute="top" secondItem="ls5-PL-6R1" secondAttribute="bottom" constant="4" id="bzb-vT-g25"/>
+                                    <constraint firstItem="ls5-PL-6R1" firstAttribute="top" secondItem="zEy-zp-Act" secondAttribute="top" constant="29" id="fWD-Hc-xik"/>
+                                    <constraint firstItem="Sy3-yp-kav" firstAttribute="leading" secondItem="zEy-zp-Act" secondAttribute="leading" constant="20" id="jMR-Gw-5ay"/>
+                                    <constraint firstItem="ES7-e7-y5Y" firstAttribute="leading" secondItem="zEy-zp-Act" secondAttribute="leading" constant="20" id="o6a-qS-9Yv"/>
+                                    <constraint firstItem="b4x-2o-1YT" firstAttribute="leading" secondItem="Sy3-yp-kav" secondAttribute="trailing" constant="8" id="tBn-ZR-Cqn"/>
+                                    <constraint firstAttribute="height" constant="173" id="voB-Gd-AYR"/>
+                                    <constraint firstItem="jUI-Cz-0rG" firstAttribute="leading" secondItem="KMR-ey-0er" secondAttribute="trailing" constant="32" id="z7a-OW-kNg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T49-yK-sJQ" firstAttribute="top" secondItem="msi-5m-MCL" secondAttribute="top" constant="2" id="CeK-XZ-Byb"/>
+                            <constraint firstAttribute="bottom" secondItem="T49-yK-sJQ" secondAttribute="bottom" constant="17" id="Ehr-oo-SX8"/>
+                            <constraint firstAttribute="trailing" secondItem="zEy-zp-Act" secondAttribute="trailing" id="Gnh-J2-u11"/>
+                            <constraint firstItem="T49-yK-sJQ" firstAttribute="leading" secondItem="msi-5m-MCL" secondAttribute="leading" constant="2" id="e5e-Is-JcH"/>
+                            <constraint firstAttribute="trailing" secondItem="T49-yK-sJQ" secondAttribute="trailing" constant="2" id="kxt-U8-QUs"/>
+                            <constraint firstItem="zEy-zp-Act" firstAttribute="leading" secondItem="msi-5m-MCL" secondAttribute="leading" id="leo-cH-uyR"/>
+                            <constraint firstAttribute="bottom" secondItem="zEy-zp-Act" secondAttribute="bottom" constant="14" id="oJw-he-sz6"/>
+                            <constraint firstItem="zEy-zp-Act" firstAttribute="top" secondItem="msi-5m-MCL" secondAttribute="top" id="y6X-i8-Nwb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="msi-5m-MCL" secondAttribute="trailing" id="4oj-fi-jux"/>
+                    <constraint firstItem="msi-5m-MCL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dPW-iM-CvW"/>
+                    <constraint firstAttribute="bottom" secondItem="msi-5m-MCL" secondAttribute="bottom" id="hIV-5k-TNR"/>
+                    <constraint firstItem="msi-5m-MCL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tcO-ne-px0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="BankImg" destination="Sy3-yp-kav" id="VZU-fT-az8"/>
+                <outlet property="bankLbl" destination="b4x-2o-1YT" id="R8z-FI-2rf"/>
+                <outlet property="cardHolderLbl" destination="Apb-Lh-2i3" id="rAd-10-Rdm"/>
+                <outlet property="cardNumLbl" destination="ES7-e7-y5Y" id="mr1-n5-RdX"/>
+                <outlet property="debitLbl" destination="kns-1y-hla" id="9Ch-Dr-550"/>
+                <outlet property="deleteBtn" destination="LYm-QP-btU" id="90P-on-6PX"/>
+                <outlet property="holderName" destination="KMR-ey-0er" id="F9E-pX-7Nb"/>
+                <outlet property="innerView" destination="zEy-zp-Act" id="6dB-bA-gwS"/>
+                <outlet property="overView" destination="msi-5m-MCL" id="Agl-Gk-umf"/>
+                <outlet property="payImage" destination="ls5-PL-6R1" id="T6v-Ij-2FF"/>
+                <outlet property="rectImageView" destination="T49-yK-sJQ" id="BHc-Lb-gFd"/>
+                <outlet property="validDateLbl" destination="jUI-Cz-0rG" id="Uc9-eb-QTh"/>
+                <outlet property="validLbl" destination="t9C-y3-vhj" id="NOR-dY-rPl"/>
+            </connections>
+            <point key="canvasLocation" x="53.623188405797109" y="44.53125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="deletered" width="8.5" height="9.5"/>
+        <image name="google_pay_logo_icon_png" width="24" height="24"/>
+        <image name="pay" width="17" height="11"/>
+        <image name="rectangle_20" width="257.5" height="257"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
